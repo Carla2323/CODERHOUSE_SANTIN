@@ -1,0 +1,432 @@
+/*INDEX*/
+h1 {
+    color: #88bd0d;
+    font-size: 70px;
+    text-align: center;
+}
+
+.tabla {
+    background-color: #e3f7fc;   
+}
+
+
+.tabla2 {
+    background-color: #F7DAD9;
+    border: #F7DAD9;
+}
+
+.staff {
+    font-size: 20px;
+    margin: 10px 30px 3% 30px;
+    background-color:rgba(214, 243, 200, 0.356);
+    padding-bottom: 20px;
+}
+
+.fotosStaff {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px; 
+    grid-row-gap: 20px;/*espaciado entre las fotos*/
+    align-items: center;
+}
+
+
+.fotosStaff img {
+    width: 20%;
+    /*no funciona el height. ???*/
+    border-radius: 20px;
+}
+
+.fotosStaff h3, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conoce {
+    margin-left: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    color: rgb(1, 44, 1);
+}
+
+
+.fotosStaff p {
+    position: relative;
+    bottom: 50px;
+}
+
+.asesorate {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(4, 59, 8, 0.267);
+    margin: 0 40%;
+}
+
+.bannerDesc {
+    background-image: url(./Img/VARIOS/bannerPlantas.jpg);
+    color: rgb(255, 255, 255);
+    padding: 2% 0;
+    margin: 1% 1.5%;  
+    font-size: 30px;  
+    text-align: center;
+}
+
+.bannerDesc h2 {
+    background-color: black;
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+.textIndex2 h2 {
+    color: rgb(1, 44, 1);
+}
+
+.textIndex2 p {
+    color: rgb(14, 37, 0);
+    text-align: justify;
+}
+
+.textIndex2 {
+    border: green solid 5px;
+    margin: 3% 1.5% 0% 1.5%;
+    padding: 0 20px;
+}
+
+.textIndex h2 {
+    color: rgb(1, 44, 1);
+}
+
+.textIndex p {
+    color: rgb(14, 37, 0);
+    text-align: justify;
+}
+
+.textIndex {
+    border: green solid 5px;
+    margin: 3% 1.5% 0% 1.5%;
+    padding: 0 20px;
+}
+
+#textCSfit {
+    display: flex;
+    flex-direction: row;
+}
+
+/* asi hice la grilla y no me funcionó, no sucedió nada no se por qué.
+    #grilla {
+    display: grid;
+    grid-template-areas: "header header" "banner banner" "seccionPrincipal textIndex" "seccionPrincipal textIndex2" "footer footer";
+    grid-template-columns: auto;
+}
+
+header {
+    grid-area: header;
+}
+
+footer { 
+    grid-area: footer;
+}
+
+.bannerDesc {
+    grid-area: banner;
+}
+
+section.textIndex {
+    grid-area: textIndex;
+}
+
+section.textIndex2 {
+    grid-area: textIndex2;
+}
+*/
+
+/*RUTINAS*/
+.rutinas {
+    list-style-type: none;
+    display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
+    height: 30px;
+    margin-left: 50px;
+}
+
+.rutinas li {
+    width: 140px;
+    font-size: 20px;
+}
+
+.rutinas li a {
+    padding: 2px;
+    color: rgb(204, 56, 56);
+    text-decoration: none;
+}
+
+.tituloRutinas {
+    text-align: center;
+    color: rgb(146, 29, 0);
+    border: double rgb(146, 29, 0) 4px;
+    margin: 0 45%;
+    display: flex;
+    
+}
+
+.imgRutinas {
+    margin: 0;
+    padding: 30px 110px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sectionPain {
+    padding: 0 40px;
+    margin-bottom: 90px;
+    align-items: center;
+}
+
+/*RECETAS*/
+.recetas {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.tablaRecetas {
+    margin-left: 90px;
+}
+
+/*TIPS*/
+.tips {
+    display: inline-flex;
+}
+.yourTips {
+    font-size: 50px;
+    font-weight: 900;
+    z-index: 100px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    display: block;
+    width: 50%;
+    height: 10px;
+    content: "";
+    margin-right: 350px;
+    margin-top: 550px;   
+}
+
+/*TIENDA*/
+#menuTienda li {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+}
+.navegacion {
+    background-color: rgba(68, 245, 83, 0.205);
+    border: inset rgba(6, 88, 13, 0.397) 2px;
+    border-radius: 2px;
+    position: relative;
+    width: auto;
+    height: 80px;
+    text-align: center;
+    margin-top: 10px;
+}
+  
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.navegacion li, .navegacion a {
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    word-spacing: 2px;
+    cursor: pointer;
+    color: rgb(5, 71, 8);
+}
+
+.categoriasDesplegable {
+    display: none;
+    position: absolute;
+    background-color: #fafcf985;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.377);
+    z-index: 1;
+    border-radius: 10px;
+}
+  
+.categoriasDesplegable a {
+    color: rgb(7, 49, 97);
+    margin-top: 10px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.categoriasDesplegable a:hover {
+    border-radius: 10px;
+}
+.cajaCategorias:hover .categoriasDesplegable {
+    display: block;
+}
+
+/*GENERAL*/
+.main {
+    position: relative;
+}
+
+.nav-brand {
+    width: 80px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+}   
+
+body {
+    background-color: rgb(230, 225, 228);
+}
+
+.menu {
+    text-align: center;
+    border-bottom: 2.5px solid #88bd0d;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
+    height: 30px;
+}
+
+.menu ul li {
+    width: 140px;
+    font-size: 10px;
+}
+
+.menu ul li a {
+    color: black;
+    font-size: x-large;
+    padding: 20px 0;
+}
+
+.menu ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+#footer {
+    background-color: rgba(92, 86, 86, 0.459);
+    border-radius: 3px;
+    border-top: 1px solid rgb(213, 253, 212);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 0; 
+}
+
+#footer h2 {
+    background-color: #0000000e;
+    color: rgba(255, 255, 255, 0.781);
+    text-align: center;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.redes {
+    margin-top: 55px;
+    display: block;
+    position: relative;
+    top: 25%;
+    left: 5%;
+    margin-right: 75%;
+}
+
+.ulRedes {
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display:flex;
+    margin:0;
+    padding:0;
+}
+
+.ulRedes li {
+    list-style:none;
+    margin:0 5px;
+}
+
+.ulRedes li a .fa {
+    color: #262626;
+    line-height:80px;
+    transition: .5s;
+    padding-right: 14px;
+}
+
+.ulRedes li a span {
+    padding:0;
+    margin:0;
+    position:relative;
+    bottom: 80px;
+    right: 20px;
+    color: #0c0c0c;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.ulRedes li a {
+    text-decoration: none;
+    display:block;
+    width:50px;
+    height:20px;
+    background: #fff;
+    text-align: center;
+    padding-left: 20px;
+    transition:.10s;
+    
+}
+
+.ulRedes li:hover span {
+    color:#fff;
+}
+
+.ulRedes li:hover:nth-child(1) a{
+    background: #3b5998;
+}
+.ulRedes li:hover:nth-child(2) a{
+    background: #00aced;
+}
+.ulRedes li:hover:nth-child(3) a{
+    background: #d140b2;
+}
+.contacto {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    width: 20%;
+    text-align: right;
+    padding: 3px;
+    position: relative;
+    left: 75%;
+    bottom: 45%;
+}
+
+.logoFooter {
+    margin-left: 45px;
+    position: relative;
+    top: 70px;
+    display: block;
+    align-items: flex-end;
+}
+
+
+
+
