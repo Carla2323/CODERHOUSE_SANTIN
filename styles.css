@@ -1,4 +1,28 @@
 /*INDEX*/
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+#seccionPrincipal {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+#textCSfit {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
 h1 {
     color: #88bd0d;
     font-size: 70px;
@@ -17,29 +41,26 @@ h1 {
 
 .staff {
     font-size: 20px;
-    margin: 10px 30px 3% 30px;
     background-color:rgba(214, 243, 200, 0.356);
     padding-bottom: 20px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.fotosStaff {
-    list-style: none;
+.infoStaff {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 20px; 
-    grid-row-gap: 20px;/*espaciado entre las fotos*/
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
 }
 
-
-.fotosStaff img {
-    width: 20%;
-    /*no funciona el height. ???*/
-    border-radius: 20px;
-}
-
-.fotosStaff h3, p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.infoStaff article {
+    border: dashed rgb(0, 0, 0) 2px;
+    margin: 30px 70px 30px 70px;
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 15px;
 }
 
 .conoce {
@@ -48,18 +69,16 @@ h1 {
     padding-top: 10px;
     color: rgb(1, 44, 1);
 }
-
-
-.fotosStaff p {
-    position: relative;
-    bottom: 50px;
-}
-
 .asesorate {
     text-align: center;
     font-size: 30px;
     background-color: rgba(4, 59, 8, 0.267);
     margin: 0 40%;
+}
+
+.asesorate:hover {
+    border: 3px dotted red;
+    border-radius: 10px;
 }
 
 .bannerDesc {
@@ -69,27 +88,13 @@ h1 {
     margin: 1% 1.5%;  
     font-size: 30px;  
     text-align: center;
+    border-radius: 10px;
 }
 
 .bannerDesc h2 {
     background-color: black;
     margin-left: 22%;
     margin-right: 22%;
-}
-
-.textIndex2 h2 {
-    color: rgb(1, 44, 1);
-}
-
-.textIndex2 p {
-    color: rgb(14, 37, 0);
-    text-align: justify;
-}
-
-.textIndex2 {
-    border: green solid 5px;
-    margin: 3% 1.5% 0% 1.5%;
-    padding: 0 20px;
 }
 
 .textIndex h2 {
@@ -102,43 +107,14 @@ h1 {
 }
 
 .textIndex {
+    height: 300px;
     border: green solid 5px;
-    margin: 3% 1.5% 0% 1.5%;
     padding: 0 20px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 24px;
 }
-
-#textCSfit {
-    display: flex;
-    flex-direction: row;
-}
-
-/* asi hice la grilla y no me funcionó, no sucedió nada no se por qué.
-    #grilla {
-    display: grid;
-    grid-template-areas: "header header" "banner banner" "seccionPrincipal textIndex" "seccionPrincipal textIndex2" "footer footer";
-    grid-template-columns: auto;
-}
-
-header {
-    grid-area: header;
-}
-
-footer { 
-    grid-area: footer;
-}
-
-.bannerDesc {
-    grid-area: banner;
-}
-
-section.textIndex {
-    grid-area: textIndex;
-}
-
-section.textIndex2 {
-    grid-area: textIndex2;
-}
-*/
 
 /*RUTINAS*/
 .rutinas {
