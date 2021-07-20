@@ -45,7 +45,6 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-
 }
 
 .infoStaff img {
@@ -149,7 +148,7 @@ h1 {
 /*RECETAS*/
 
 .bannerRecetas {
-    background-image: url(../Img/RECETAS/Maria\ Luisa\ Nutrición\ -\ Palacino\ Estudio\ Creativo\ -\ Huesca.jpg);
+    background-image: url(../Img/RECETAS/bannerRecetas.jpg);
     padding: 2% 0;
     margin: 1% 1.5%;  
     text-align: center;
@@ -168,6 +167,7 @@ h1 {
     display: inline;
 }
 
+
 .articulosRecetas article {
     height: 300px;
     font-size: 20px;
@@ -175,7 +175,9 @@ h1 {
     color: rgb(17, 141, 141);
     margin-bottom: 110px;
 }
-
+ .articulosRecetas p { 
+    text-align: justify;
+ }
 .articulosRecetas img {
     border-radius: 5px;
     width: 450px;
@@ -436,6 +438,18 @@ body {
     align-items: flex-end;
 }
 
+/*Parte de las media querys*/
+
+@media screen and (max-width:1000px){
+    #seccionPrincipal {
+        display: flex;
+        background-color: blue;
+    }
+    .staff {
+        margin-bottom: 100px;
+        padding-bottom: 500px;
+    }
+}
 
 
 
