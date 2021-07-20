@@ -5,10 +5,11 @@
     align-items: center;
 }
 
-main {
+#mainIndex {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 90%;    
+    margin-bottom: 25px; 
 }
 
 #seccionPrincipal {
@@ -29,24 +30,15 @@ h1 {
     text-align: center;
 }
 
-.tabla {
-    background-color: #e3f7fc;   
-}
-
-
-.tabla2 {
-    background-color: #F7DAD9;
-    border: #F7DAD9;
-}
-
 .staff {
     font-size: 20px;
     background-color:rgba(214, 243, 200, 0.356);
     padding-bottom: 20px;
-    height: 700px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 300px;
 }
 
 .infoStaff {
@@ -56,11 +48,22 @@ h1 {
 
 }
 
+.infoStaff img {
+    width: 100px;
+    height: 100px;
+}
+
 .infoStaff article {
-    border: dashed rgb(0, 0, 0) 2px;
+    border: dashed rgba(0, 0, 0, 0.096) 2px;
     margin: 30px 70px 30px 70px;
     background-color: rgba(0, 0, 0, 0.521);
     border-radius: 15px;
+}
+
+.infoStaff article:hover {
+    background-color: #88bd0d;
+    border-radius: 15px;
+    border: dashed #88bd0d 2px;
 }
 
 .conoce {
@@ -73,16 +76,16 @@ h1 {
     text-align: center;
     font-size: 30px;
     background-color: rgba(4, 59, 8, 0.267);
-    margin: 0 40%;
+    margin: 50px 40% 0 40%;
 }
 
 .asesorate:hover {
-    border: 3px dotted red;
+    border: 3px dotted rgba(255, 0, 0, 0);
     border-radius: 10px;
 }
 
 .bannerDesc {
-    background-image: url(./Img/VARIOS/bannerPlantas.jpg);
+    background-image: url(../Img/VARIOS/bannerPlantas.jpg);
     color: rgb(255, 255, 255);
     padding: 2% 0;
     margin: 1% 1.5%;  
@@ -141,35 +144,64 @@ h1 {
     border: double rgb(146, 29, 0) 4px;
     margin: 0 45%;
     display: flex;
-    
-}
-
-.imgRutinas {
-    margin: 0;
-    padding: 30px 110px;
-    box-sizing: border-box;
-    width: 50%;
-    height: 1%;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.sectionPain {
-    padding: 0 40px;
-    margin-bottom: 90px;
-    align-items: center;
 }
 
 /*RECETAS*/
-.recetas {
-    width: 100%;
-    height: auto;
-    position: relative;
+
+.bannerRecetas {
+    background-image: url(../Img/RECETAS/Maria\ Luisa\ Nutrición\ -\ Palacino\ Estudio\ Creativo\ -\ Huesca.jpg);
+    padding: 2% 0;
+    margin: 1% 1.5%;  
+    text-align: center;
+    border-radius: 10px;
+    background-color: black;
 }
 
-.tablaRecetas {
-    margin-left: 90px;
+.bannerRecetas h2 {
+    font-size: 40px;
+    color: rgb(45, 112, 109);
+}
+
+.articulosRecetas {
+    width: 88%;
+    padding: 1px;
+    display: inline;
+}
+
+.articulosRecetas article {
+    height: 300px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(17, 141, 141);
+    margin-bottom: 110px;
+}
+
+.articulosRecetas img {
+    border-radius: 5px;
+    width: 450px;
+    height: 300px;
+}
+
+.articuloIzq {
+    text-align: left;
+    margin-right: 20%;
+}
+
+.articuloIzq img {
+    float: left;
+    padding-right: 30px;
+    margin-left: 2%;
+}
+
+.articuloDer {
+    text-align: right;
+    margin-left: 20%;
+}
+
+.articuloDer img {
+    float: right;
+    padding-left: 30px;
+    margin-right: 2%;
 }
 
 /*TIPS*/
@@ -191,11 +223,7 @@ h1 {
 }
 
 /*TIENDA*/
-#menuTienda li {
-    display: inline-block;
-    position: relative;
-    width: 25%;
-}
+
 .navegacion {
     background-color: rgba(68, 245, 83, 0.205);
     border: inset rgba(6, 88, 13, 0.397) 2px;
@@ -212,7 +240,15 @@ h1 {
     display: flex;
     justify-content: space-evenly;
 }
-  
+
+.navegacion a:hover {
+    text-decoration: underline black 2px;
+}
+
+.navegacion li:hover {
+    text-decoration: underline black 2px;
+}
+
 .navegacion li, .navegacion a {
     padding: 10px;
     font-size: 15px;
@@ -233,7 +269,7 @@ h1 {
     z-index: 1;
     border-radius: 10px;
 }
-  
+
 .categoriasDesplegable a {
     color: rgb(7, 49, 97);
     margin-top: 10px;
@@ -250,9 +286,6 @@ h1 {
 }
 
 /*GENERAL*/
-.main {
-    position: relative;
-}
 
 .nav-brand {
     width: 80px;
@@ -297,13 +330,17 @@ body {
     margin-left: 20px;
 }
 
+.nav-menu a:hover {
+    text-decoration: underline 3px #88bd0d;
+    color: #88bd0d
+}
+
 #footer {
     background-color: rgba(92, 86, 86, 0.459);
     border-radius: 3px;
     border-top: 1px solid rgb(213, 253, 212);
     width: 100%;
     height: 100%;
-    position: relative;
     bottom: 0; 
 }
 
@@ -318,9 +355,7 @@ body {
 .redes {
     margin-top: 55px;
     display: block;
-    position: relative;
-    top: 25%;
-    left: 5%;
+    margin-left: 5%;
     margin-right: 75%;
 }
 
@@ -390,9 +425,7 @@ body {
     width: 20%;
     text-align: right;
     padding: 3px;
-    position: relative;
-    left: 75%;
-    bottom: 45%;
+    margin-left: 75%;
 }
 
 .logoFooter {
