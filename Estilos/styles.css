@@ -34,7 +34,6 @@ h1 {
     font-size: 20px;
     background-color:rgba(214, 243, 200, 0.356);
     padding-bottom: 20px;
-    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,6 +44,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    cursor: pointer;
 }
 
 .infoStaff img {
@@ -55,8 +55,15 @@ h1 {
 .infoStaff article {
     border: dashed rgba(0, 0, 0, 0.096) 2px;
     margin: 30px 70px 30px 70px;
-    background-color: rgba(0, 0, 0, 0.521);
+    background-color: rgba(8, 31, 15, 0.795);
     border-radius: 15px;
+}
+
+.infoStaff h5,h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .infoStaff article:hover {
@@ -105,11 +112,9 @@ h1 {
 
 .textIndex p {
     color: rgb(14, 37, 0);
-    text-align: justify;
 }
 
 .textIndex {
-    height: 300px;
     border: green solid 5px;
     padding: 0 20px;
     text-align: center;
@@ -167,7 +172,6 @@ h1 {
     display: inline;
 }
 
-
 .articulosRecetas article {
     height: 300px;
     font-size: 20px;
@@ -175,13 +179,19 @@ h1 {
     color: rgb(17, 141, 141);
     margin-bottom: 110px;
 }
- .articulosRecetas p { 
+
+.articulosRecetas p { 
     text-align: justify;
- }
+}
+
 .articulosRecetas img {
     border-radius: 5px;
     width: 450px;
     height: 300px;
+}
+
+.articulosRecetas h3:hover {
+    text-decoration: underline rgb(17, 141, 141) 2px;
 }
 
 .articuloIzq {
@@ -334,7 +344,12 @@ body {
 
 .nav-menu a:hover {
     text-decoration: underline 3px #88bd0d;
-    color: #88bd0d
+    color: #88bd0d;
+    cursor:pointer;
+}
+
+#btn-menu {
+    display: none;
 }
 
 #footer {
@@ -440,14 +455,80 @@ body {
 
 /*Parte de las media querys*/
 
-@media screen and (max-width:1000px){
-    #seccionPrincipal {
-        display: flex;
-        background-color: blue;
+@media screen and (max-width:576px){
+    h1 {
+        font-size: 27px;
+        text-align: center;
     }
-    .staff {
-        margin-bottom: 100px;
-        padding-bottom: 500px;
+
+    .container-menu {
+        position: absolute;
+        background: rgba(0, 0, 0, 0, 5);
+        width: 100%;
+        height: 100vh;
+        top: 0; left: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #btn-menu:checked - .container-menu {
+        opacity: 0;
+        visibility: visible;
+    }
+
+    #btn-menu:checked - .container-menu .cont-menu {
+        transform: translateX(0%);
+    }
+
+    .cont-menu {
+        width: 100%;
+        max-width: 250px;
+        background: #1c1c1c;
+        height: 100vh;
+        position: relative;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+    }
+
+    .cont-menu nav {
+        transform: translateY(15%);
+    }
+
+    .cont-menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    }
+
+    .cont-menu a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+    }
+
+    .cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    }
+
+    #seccionPrincipal {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: brown;
+    }
+
+    .infoStaff article {
+        background-color: violet;
+        display: grid;
+        grid-template-columns: 150px ;
+        
     }
 }
 
