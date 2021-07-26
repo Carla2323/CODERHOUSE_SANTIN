@@ -678,11 +678,6 @@
         cursor: pointer;
     }
 
-    .infoStaff img {
-        width: 100px;
-        height: 100px;
-    }
-
     .infoStaff article {
         border: dashed rgba(0, 0, 0, 0.096) 2px;
         margin: 30px 70px 30px 70px;
@@ -755,33 +750,131 @@
     }
 
     /*RUTINAS*/
-    .rutinas {
+
+    .menuRutinas {
+        text-align: center;
+        border-bottom: 2.5px solid #e00e0e;
+    }
+
+    .menuRutinas ul {
         list-style-type: none;
         display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
-        height: 30px;
-        margin-left: 50px;
+        height: 10%;
+        width: 100%;
     }
 
-    .rutinas li {
+    .menuRutinas ul li {
         width: 140px;
-        font-size: 20px;
+        font-size: 10px;
     }
 
-    .rutinas li a {
-        padding: 2px;
-        color: rgb(204, 56, 56);
-        text-decoration: none;
+    .menuRutinas ul li a {
+        color: black;
+        font-size: x-large;
+        padding: 20px 0;
     }
 
-    .tituloRutinas {
+    .menuRutinas ul.nav-menu-rutinas {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .nav-menu-rutinas a:hover {
+        text-decoration: underline 3px #e00e0e;
+        color: #e00e0e;
+        cursor:pointer;
+    }
+
+    .nav-menu-rutinas {
+        width: 10px;
+        justify-content: center;
+        margin-right: 60px;
+    } 
+
+    .gradienteRutinas {
+        background-image: linear-gradient(to right,  rgba(158, 0, 0, 0), rgba(168, 16, 16, 0.637), rgba(158, 0, 0, 0));
         text-align: center;
-        color: rgb(146, 29, 0);
-        border: double rgb(146, 29, 0) 4px;
-        margin: 0 45%;
-        display: flex;
+        font-size: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: rgb(32, 1, 1);
+    }
+
+    .seccionPrincipalRutinas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10%;
+        width: 80%;
+        font-size: 30px;
+        margin-left: 10%;
+    }
+
+    .seccionPrincipalRutinas div {
+        margin: 30px 70px 30px 70px;
+        background-color: rgba(0, 0, 0, 0.781);
+        border-radius: 10px;
+        color: rgb(214, 122, 18);
+    }
+
+    .seccionPrincipalRutinas h2 {
+        text-align: center;
+    }
+
+    .seccionPrincipalRutinas p {
+        text-align: justify;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .seccionPrincipalRutinas strong:hover {
+        text-decoration: underline rgb(214, 122, 18);
+        cursor: pointer;
     }
 
     /*RECETAS*/
+
+    .menuRecetas {
+        text-align: center;
+        border-bottom: 2.5px solid rgb(63, 184, 178);
+    }
+
+    .menuRecetas ul {
+        list-style-type: none;
+        display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
+        height: 10%;
+        width: 100%;
+    }
+
+    .menuRecetas ul li {
+        width: 140px;
+        font-size: 10px;
+    }
+
+    .menuRecetas ul li a {
+        color: black;
+        font-size: x-large;
+        padding: 20px 0;
+    }
+
+    .menuRecetas ul.nav-menu {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .nav-menu-recetas a:hover {
+        text-decoration: underline 3px rgb(63, 184, 178);
+        color: rgb(63, 184, 178);
+        cursor:pointer;
+    }
+
+    .nav-menu-recetas {
+        width: 10px;
+        justify-content: center;
+        margin-right: 60px;
+    } 
+
 
     .bannerRecetas {
         background-image: url(../Img/RECETAS/bannerRecetas.jpg);
@@ -813,6 +906,7 @@
 
     .articulosRecetas p { 
         text-align: justify;
+        font-size: 25px;
     }
 
     .articulosRecetas img {
@@ -931,7 +1025,7 @@
     /*GENERAL*/
 
     .nav-brand {
-        width: 80px;
+        width: 110px;
         border-bottom-width: 5px;
         border-left-width: 5px;
         border-right-width: 5px;
@@ -939,7 +1033,10 @@
         border-left-style: solid;
         border-right-style: solid;
         border-bottom-style: solid;
-        border-top-style: solid;
+        border-top-style: solid;   
+        position: absolute;
+        right: 88%;
+        bottom: 80%;
     }   
     .nav-brand-footer {
         width: 80px;
@@ -990,6 +1087,12 @@
         color: #88bd0d;
         cursor:pointer;
     }
+
+    .nav-menu {
+        width: 10px;
+        justify-content: center;
+        margin-right: 60px;
+    } 
 
     #footer {
         background-color: rgba(92, 86, 86, 0.459);

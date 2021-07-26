@@ -6,75 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSfit-rutinas</title>
     <link rel="stylesheet" href="./Estilos/styles.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
         <!--Barra de navegación-->
         <h1>Bienvenidos a CSfit, tu lugar saludable!</h1>
         <div class="container">
-            <nav class="menu">
-                    <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand">
-                <ul class="nav-menu">
+            <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand">
+            <nav class="menuRutinas">
+                <ul class="nav-menu-rutinas">
                     <li>
                         <a href="index.html">Inicio</a>
                     </li>
-                        
                     <li>
-                        <a href="rutinas.html">Rutinas</a>
+                        <a href="Rutinas.html">Rutinas</a>
                     </li>
-                        
                     <li>
-                        <a href="recetas.html">Recetas</a>
+                        <a href="Recetas.html">Recetas</a>
                     </li>
-                        
                     <li>
-                        <a href="tips.html">Tips</a>
+                        <a href="Tips.html">Tips</a>
                     </li>
-                        
                     <li>
-                        <a href="tienda.html">Tienda</a>
+                        <a href="Tienda.html">Tienda</a>
                     </li>
                 </ul>
-            </nav>
-        </div> 
+            </nav> 
+        </div>  
     </header>
-    <main>
+    <main class="mainRutinas">
         <!--Primera sección-->
-        <div>
-            <img src="./Img/VARIOS/enProceso.jpg" alt="">
+        <div class="gradienteRutinas">
+            <h2>NO PAIN NO GAIN</h2>
         </div>
         <!--Segunda sección-->
-        <h3 class="tituloRutinas">TONIFICA</h3>
-        <ul class="rutinas">
-            <li>
-                <a href="TonificaHipertrofia/gluteos.html">Gluteos</a>
-            </li> 
-            <li>     
-                <a href="TonificaHipertrofia/trensup.html">Tren superior</a>
-            </li>
-            <li>
-                <a href="TonificaHipertrofia/abdominales.html">Abdominales</a>
-            </li>
-            <li>
-                <a href="TonificaHipertrofia/piernas.html">Piernas</a>
-            </li>
-        </ul>
-        <h3 class="tituloRutinas">HIPERTROFIA</h3>
-        <ul class="rutinas">
-            <li>
-                <a href="TonificaHipertrofia/ejercicio1.html">Ejercicio1</a>
-            </li>
-            <li>
-                <a href="TonificaHipertrofia/ejercicio2.html">Ejercicio2</a>
-            </li>
-            <li>
-                <a href="TonificaHipertrofia/ejercicio3.html">Ejercicio3</a>
-            </li>
-            <li>
-                <a href="TonificaHipertrofia/ejercicio4.html">Ejercicio4</a>
-            </li>
-        </ul>    
+        <div class="seccionPrincipalRutinas">
+            <div class="tonifica" data-aos="fade-up">
+                <h2>TONIFICA</h2>
+                <a href="#"></a>
+                <p>Las mejores rutinas para que hagas en tu casa o al aire libre, solo o acompañado... Entrá y mirá lo que tenemos para ofrecerte. No te lo podes perder! <strong>Empezá ahora</strong> </p>
+            </div>
+            <div class="hipertrofia" data-aos="fade-down">
+                <h2>HIPERTROFIA</h2>
+                <a href="#"></a>
+                <p>Recomedamos realizar este tipo de ejercicios bajo la supervición de un profesional, no dudes en consultarnos y alcanzá tus objetivos! <strong>Empezá ahora</strong></p>
+            </div>
+        </div>
     </main>
     <!-- Inicio de footer -->
     <footer id="footer">
@@ -103,7 +81,7 @@
             </ul>
         </div>
         <div class="logoFooter">
-            <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand">
+            <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand-footer">
         </div>
         <!-- Datos de contacto -->
         <div class="contacto">
@@ -112,6 +90,10 @@
                 <strong>tel:</strong> 4547-3345
             </p>
         </div>
-    </footer>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

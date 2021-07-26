@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSfit-inicio</title>
     <link rel="stylesheet" href="./Estilos/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body id="inicio">  
     <!--Inicio-->
@@ -14,7 +15,7 @@
         <h1>Bienvenidos a CSfit, tu lugar saludable!</h1>
         <div class="container">
             <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand">
-            <nav class="menu" class="container-menu">
+            <nav class="menu">
                 <ul class="nav-menu">
                     <li>
                         <a href="index.html">Inicio</a>
@@ -37,7 +38,7 @@
     </header>
     <main id="mainIndex">
         <!--Primera sección-->
-        <div id="banner" class="bannerDesc">
+        <div id="banner" class="bannerDesc" data-aos="flip-left">
             <h2>No te pierdas nuestras promos y descuentos!!!</h2>
         </div>
         <div id="seccionPrincipal">
@@ -45,19 +46,19 @@
             <section class="staff">
                 <h3 class="conoce">Conocé a nuestro staff...</h3>
                 <div class="infoStaff">
-                    <article>
+                    <article data-aos="zoom-out">
                         <h4>Equipo de Nutricionistas</h4>
                         <h5>Especialistas en deporte y microbiología.</h5>
                     </article>
-                    <article>
+                    <article data-aos="zoom-out">
                         <h4>Equipo de Psicologos</h4>
                         <h5>Especialistas en Trastornos de la Conducta Alimentaria.</h5>
                     </article>
-                    <article>
+                    <article data-aos="zoom-out">
                         <h4>Equipo de Personal Trainer</h4>
                         <h5>Entrenamientos 100% personalizados.</h5>
                     </article>
-                    <article>
+                    <article data-aos="zoom-out">
                         <h4>Equipo de Asesores</h4>
                         <h5>Asesoría de imagen, consejos y tips.</h5>
                     </article>
@@ -114,5 +115,9 @@
                 </p>
             </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
