@@ -25,19 +25,15 @@
     }
 
     .menu ul li {
-        width: 140px;
+        width: 100%;
         font-size: 10px;
+        padding: 5px;
     }
 
     .menu ul li a {
         color: black;
         font-size: x-large;
         padding: 20px 0;
-    }
-
-    .menu ul.nav-menu {
-        flex: 1;
-        margin-left: 20px;
     }
 
     .nav-menu a:hover {
@@ -56,22 +52,19 @@
     .nav-menu {
         width: 10px;
         justify-content: center;
-        margin-right: 60px;
     } 
 
-  .nav-brand {
-    width: 80px;
-    border-bottom-width: 2px;
-    border-left-width: 2px;
-    border-right-width: 2px;
-    border-top-width: 2px;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-top-style: solid;
-    float:inline-start;
-    margin-left: 350px;
-    
+    .nav-brand {
+        width: 100px;
+        height: 100px;
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+        border-right-width: 2px;
+        border-top-width: 2px;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-top-style: solid;
     }   
 
     #banner h2 {
@@ -664,11 +657,10 @@
     .staff {
         font-size: 20px;
         background-color:rgba(214, 243, 200, 0.356);
-        padding-bottom: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: 300px;
+        padding-bottom: 150px;
     }
 
     .infoStaff {
@@ -751,6 +743,10 @@
 
     /*RUTINAS*/
 
+    .bodyRutinas {
+        background-color: rgba(156, 97, 97, 0.329);
+    }
+
     .menuRutinas {
         text-align: center;
         border-bottom: 2.5px solid #e00e0e;
@@ -801,14 +797,20 @@
         margin-bottom: 30px;
         color: rgb(32, 1, 1);
     }
+    
+    .bannerRutinas {
+        width: 100%;
+    }
 
     .seccionPrincipalRutinas {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
         gap: 10%;
-        width: 80%;
+        width: 100%;
+        height: 100%;
         font-size: 30px;
-        margin-left: 10%;
+        background-image: url(../Img/RUTINAS/banner2\ \(1\).jpg);
     }
 
     .seccionPrincipalRutinas div {
@@ -831,6 +833,106 @@
     .seccionPrincipalRutinas strong:hover {
         text-decoration: underline rgb(214, 122, 18);
         cursor: pointer;
+    }
+
+    
+    #footerRutinas {
+        background-color: rgba(92, 86, 86, 0.459);
+        border-radius: 3px;
+        border-top: 1px solid rgb(213, 253, 212);
+        width: 100%;
+        height: 100%;
+    }
+
+    #footerRutinas h2 {
+        background-color: #0000000e;
+        color: rgba(255, 255, 255, 0.781);
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .redes {
+        margin-top: 55px;
+        display: block;
+        margin-left: 5%;
+        margin-right: 75%;
+    }
+
+    .ulRedes {
+        position:relative;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        display:flex;
+        margin:0;
+        padding:0;
+    }
+
+    .ulRedes li {
+        list-style:none;
+        margin:0 5px;
+    }
+
+    .ulRedes li a .fa {
+        color: #262626;
+        line-height:80px;
+        transition: .5s;
+        padding-right: 14px;
+    }
+
+    .ulRedes li a span {
+        padding:0;
+        margin:0;
+        position:relative;
+        bottom: 80px;
+        right: 20px;
+        color: #0c0c0c;
+        font-size: 12px;
+        letter-spacing: 2px;
+        transition: .5s;
+    }
+
+    .ulRedes li a {
+        text-decoration: none;
+        display:block;
+        width:50px;
+        height:20px;
+        background: #fff;
+        text-align: center;
+        padding-left: 20px;
+        transition:.10s;
+        
+    }
+
+    .ulRedes li:hover span {
+        color:#fff;
+    }
+
+    .ulRedes li:hover:nth-child(1) a{
+        background: #3b5998;
+    }
+    .ulRedes li:hover:nth-child(2) a{
+        background: #00aced;
+    }
+    .ulRedes li:hover:nth-child(3) a{
+        background: #d140b2;
+    }
+    .contacto {
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        margin-top: 10px;
+        width: 20%;
+        text-align: right;
+        padding: 3px;
+        margin-left: 75%;
+    }
+
+    .logoFooter {
+        margin-left: 45px;
+        position: relative;
+        top: 70px;
+        display: block;
+        align-items: flex-end;
     }
 
     /*RECETAS*/
@@ -942,6 +1044,51 @@
     }
 
     /*TIPS*/
+
+    .bodyTips {
+        background-color: #bc8fda2d;
+    }
+
+    .menuTips {
+        text-align: center;
+        border-bottom: 2.5px solid #780dc0;
+    }
+
+    .menuTips ul {
+        list-style-type: none;
+        display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
+        height: 10%;
+        width: 100%;
+    }
+
+    .menuTips ul li {
+        width: 140px;
+        font-size: 10px;
+    }
+
+    .menuTips ul li a {
+        color: black;
+        font-size: x-large;
+        padding: 20px 0;
+    }
+
+    .menuTips ul.nav-menu {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .nav-menu-tips a:hover {
+        text-decoration: underline 3px #780dc0;
+        color: #780dc0;
+        cursor:pointer;
+    }
+
+    .nav-menu-tips {
+        width: 10px;
+        justify-content: center;
+        margin-right: 60px;
+    } 
+
     #scrollContainer {
       display: block;
       margin: 0 auto;
@@ -962,6 +1109,7 @@
       font-size: 23px;
       margin-bottom: 60px;
       margin-top: 50px;
+      color: #25013d;
     }
 
     #tips {
@@ -970,8 +1118,8 @@
       grid-template-rows: repeat(3 1fr);
       column-gap: 50px;
       row-gap: 20px;
-      height: 100%;
-      width: 50%;
+      height: 60%;
+      width: 40%;
       margin: 40px auto 20px auto;
       align-items: center;
     }
@@ -981,18 +1129,18 @@
       margin: auto;
       justify-items: center;
       align-items: center;
-      background-color: #d95fe998;
+      background-color: #780dc0bd;
       border-radius: 15px;
       height: 100%;
       width: 100%;
       font-size: 20px;
       text-align: center;
-      transition: all 3s;
+      transition: all 2s;
     }
 
     #tips article:hover {
-      height: 150px;
-      width: 150px;
+      height: 70%;
+      width: 100%;
       padding: 20px;
       background-color: #bd22d1e0;
     }
@@ -1004,9 +1152,53 @@
 
     /*TIENDA*/
 
+    .bodyTienda {
+        background-color: rgba(255, 203, 203, 0.26);
+    }
+
+    .menuTienda {
+        text-align: center;
+        border-bottom: 2.5px solid rgb(250, 182, 182);
+    }
+
+    .menuTienda ul {
+        list-style-type: none;
+        display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
+        height: 10%;
+        width: 100%;
+    }
+
+    .menuTienda ul li {
+        width: 140px;
+        font-size: 10px;
+    }
+
+    .menuTienda ul li a {
+        color: black;
+        font-size: x-large;
+        padding: 20px 0;
+    }
+
+    .menuTienda ul.nav-menu-tienda {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .nav-menu-tienda a:hover {
+        text-decoration: underline 3px rgb(250, 182, 182);
+        color: rgb(250, 182, 182);
+        cursor:pointer;
+    }
+
+    .nav-menu-tienda {
+        width: 10px;
+        justify-content: center;
+        margin-right: 60px;
+    } 
+
     .navegacion {
-        background-color: rgba(68, 245, 83, 0.205);
-        border: inset rgba(6, 88, 13, 0.397) 2px;
+        background-color: rgba(223, 6, 6, 0.205);
+        border: inset rgba(238, 73, 73, 0.397) 2px;
         border-radius: 2px;
         position: relative;
         width: auto;
@@ -1063,6 +1255,40 @@
     }
     .cajaCategorias:hover .categoriasDesplegable {
         display: block;
+    }
+
+    .productosTienda {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3 1fr);
+        column-gap: 50px;
+        row-gap: 20px;
+        height: 100%;
+        width: 80%;
+        margin: 40px auto 20px auto;
+        text-align: center;    
+    }
+
+    .productosTienda article {
+        border: solid black 2px;
+        justify-items: center;
+    }
+
+    .productosTienda img {
+        width: 300px;
+        height: 300px;
+        padding-top: 20px;
+    }
+
+    .productosTienda p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .productosTienda .precio {
+        font-size: 30px;
+        border: solid 1px black;
+        margin: 0 10px;
     }
 
     /*GENERAL*/
