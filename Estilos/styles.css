@@ -942,21 +942,64 @@
     }
 
     /*TIPS*/
-    .tips {
-        display: inline-flex;
+    #scrollContainer {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      width: 50%;
+      height: 200px;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      background-color: #0000000e;
+      margin-top: 20px;
     }
-    .yourTips {
-        font-size: 50px;
-        font-weight: 900;
-        z-index: 100px;
-        color: rgb(0, 0, 0);
-        margin-bottom: 30px;
-        display: block;
-        width: 50%;
-        height: 10px;
-        content: "";
-        margin-right: 350px;
-        margin-top: 550px;   
+
+    #scrollContainer article {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40%;
+      font-size: 23px;
+      margin-bottom: 60px;
+      margin-top: 50px;
+    }
+
+    #tips {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3 1fr);
+      column-gap: 50px;
+      row-gap: 20px;
+      height: 100%;
+      width: 50%;
+      margin: 40px auto 20px auto;
+      align-items: center;
+    }
+
+    #tips article {
+      display: flex;
+      margin: auto;
+      justify-items: center;
+      align-items: center;
+      background-color: #d95fe998;
+      border-radius: 15px;
+      height: 100%;
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+      transition: all 3s;
+    }
+
+    #tips article:hover {
+      height: 150px;
+      width: 150px;
+      padding: 20px;
+      background-color: #bd22d1e0;
+    }
+
+    #tips strong:hover {
+      text-decoration: underline #000000e0;
+      cursor: pointer;
     }
 
     /*TIENDA*/
