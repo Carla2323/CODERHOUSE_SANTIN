@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSfit-tienda</title>
     <link rel="stylesheet" href="./Estilos/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 </head>
 <body class="bodyTienda">
@@ -64,7 +65,9 @@
             </ul>
         </nav>
         <!--Segunda sección-->
-        <div class="productosTienda">
+        <div class="productosTienda" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <article>
                 <img src="./Img/TIENDA/disco2.jpeg" alt="discos">
                 <hr>
@@ -318,7 +321,7 @@
             </ul>
         </div>
         <div class="logoFooter">
-            <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand">
+            <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand-footer">
         </div>
         <!-- Datos de contacto -->
         <div class="contacto">
@@ -328,5 +331,9 @@
             </p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
