@@ -1,1374 +1,192 @@
-/*version movil*/
+/*INDEX*/
 
-@media screen and (max-width:600px){
-    
-    body {
-        background-color: rgb(230, 225, 228);
-    }
-
-    h1 {
-        font-size: 27px;
-        text-align: center;
-        color: #88bd0d;
-    }  
-
-    .menu {
-        text-align: center;
-        border-bottom: 2.5px solid #88bd0d;
-    }
-
-    .menu ul {
-        list-style-type: none;
-        display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
-        height: 10%;
-        width: 55%;
-    }
-
-    .menu ul li {
-        width: 100%;
-        font-size: 10px;
-        padding: 5px;
-    }
-
-    .menu ul li a {
-        color: black;
-        font-size: x-large;
-        padding: 20px 0;
-    }
-
-    .nav-menu a:hover {
-        text-decoration: underline 3px #88bd0d;
-        color: #88bd0d;
-        cursor:pointer;
-    }
-
-    #inicio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    
-    .nav-menu {
-        width: 10px;
-        justify-content: center;
-    } 
-
-    .nav-brand {
-        width: 100px;
-        height: 100px;
-        border-bottom-width: 2px;
-        border-left-width: 2px;
-        border-right-width: 2px;
-        border-top-width: 2px;
-        border-left-style: solid;
-        border-right-style: solid;
-        border-bottom-style: solid;
-        border-top-style: solid;
-    }   
-
-    #banner h2 {
-        font-size: 30px;
-    }
-
-    #seccionPrincipal {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin-top: 20px;
-    }
-
-    .staff {
-        font-size: 20px;
-        background-color:rgba(214, 243, 200, 0.356);
-        padding-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 300px;
-    }
-
-    .infoStaff {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        cursor: pointer;
-    }
-
-    .infoStaff article:hover {
-        background-color: #88bd0d;
-        border-radius: 15px;
-        border: dashed #88bd0d 2px;
-    }
-
-    .infoStaff h5,h4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-    }
-
-    .infoStaff h5 {
-        text-align: center;
-    }
-
-    .infoStaff article {
-        border: dashed rgba(0, 0, 0, 0.096) 2px;
-        margin: 30px 70px 30px 70px;
-        background-color: rgba(8, 31, 15, 0.795);
-        border-radius: 15px;
-    }
-
-    .conoce {
-        margin-right: 100px;
-        text-align: center;
-    }
-
-    .conoce {
-        margin-left: 100px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        padding-top: 10px;
-        color: rgb(1, 44, 1);
-    }
-    .asesorate {
-        text-align: center;
-        font-size: 20px;
-        background-color: rgba(4, 59, 8, 0.267);
-        margin: 50px 40% 0 40%;
-    }
-
-    .asesorate:hover {
-        border: 3px dotted rgba(255, 0, 0, 0);
-        border-radius: 10px;
-    }
-
-    .staff {
-        height: 60%;
-    }
-
-    #textCSFit {
-        margin-bottom: 20px;
-    }
-
-    
-    .bannerDesc {
-        background-image: url(../Img/VARIOS/bannerPlantas.jpg);
-        color: rgb(255, 255, 255);
-        padding: 2% 0;
-        margin: 1% 1.5%;  
-        font-size: 30px;  
-        text-align: center;
-        border-radius: 10px;
-    }
-
-    .bannerDesc h2 {
-        background-color: black;
-        margin-left: 22%;
-        margin-right: 22%;
-    }
-
-    .textIndex h2 {
-        color: rgb(1, 44, 1);
-    }
-
-    .textIndex p {
-        color: rgb(14, 37, 0);
-    }
-
-    .textIndex {
-        border: green solid 5px;
-        padding: 0 20px;
-        text-align: center;
-        margin-left: 10px;
-        border-radius: 10px;
-        font-size: 24px;
-    }
-
-    
-    #footer {
-        background-color: rgba(92, 86, 86, 0.459);
-        border-radius: 3px;
-        border-top: 1px solid rgb(213, 253, 212);
-        width: 100%;
-        height: 100%;
-        bottom: 0; 
-    }
-
-    #footer h2 {
-        background-color: #0000000e;
-        color: rgba(255, 255, 255, 0.781);
-        text-align: center;
-        margin: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .redes {
-        margin-top: 55px;
-        display: block;
-        margin-left: 5%;
-        margin-right: 75%;
-    }
-
-    .ulRedes {
-        position:relative;
-        top:50%;
-        left:50%;
-        transform:translate(-50%, -50%);
-        display:flex;
-        margin:0;
-        padding:0;
-    }
-
-    .ulRedes li {
-        list-style:none;
-        margin:0 5px;
-    }
-
-    .ulRedes li a .fa {
-        color: #262626;
-        line-height:80px;
-        transition: .5s;
-        padding-right: 14px;
-    }
-
-    .ulRedes li a span {
-        padding:0;
-        margin:0;
-        position:relative;
-        bottom: 80px;
-        right: 20px;
-        color: #0c0c0c;
-        font-size: 12px;
-        letter-spacing: 2px;
-        transition: .5s;
-    }
-
-    .ulRedes li a {
-        text-decoration: none;
-        display:block;
-        width:50px;
-        height:20px;
-        background: #fff;
-        text-align: center;
-        padding-left: 20px;
-        transition:.10s;
-        
-    }
-
-    .ulRedes li:hover span {
-        color:#fff;
-    }
-
-    .ulRedes li:hover:nth-child(1) a{
-        background: #3b5998;
-    }
-    .ulRedes li:hover:nth-child(2) a{
-        background: #00aced;
-    }
-    .ulRedes li:hover:nth-child(3) a{
-        background: #d140b2;
-    }
-    .contacto {
-        border-radius: 10px;
-        color: rgb(255, 255, 255);
-        margin-top: 10px;
-        width: 20%;
-        text-align: right;
-        padding: 3px;
-        margin-left: 75%;
-    }
-
-    .logoFooter {
-        margin-left: 45px;
-        position: relative;
-        top: 70px;
-        display: block;
-        align-items: flex-end;
-    }
-
-    .nav-brand-footer {
-        width: 80px;
-        border-bottom-width: 4px;
-        border-left-width: 4px;
-        border-right-width: 4px;
-        border-top-width: 4px;
-        border-left-style: solid;
-        border-right-style: solid;
-        border-bottom-style: solid;
-        border-top-style: solid;
-    } 
-
-    .contacto p {   
-        float: right;
-    }
+h1 {
+    color: #88bd0d;
+    font-size: 57px;
+    text-align: center;
 }
 
-/*version tablet*/
-@media screen and (min-width:600px) {
-    body {
-        background-color: rgb(230, 225, 228);
-    }
+.nav-link {
+    font-size: 20px;
+}
 
-    h1 {
-        font-size: 27px;
-        text-align: center;
-        color: #88bd0d;
-    }  
+.nav-link:hover {
+    color: #88bd0d !important;
+    cursor: pointer;
+    text-decoration: underline;
+}
 
-    .menu {
-        text-align: center;
-        border-bottom: 2.5px solid #88bd0d;
-    }
+hr {
+    opacity: 1 !important;
+    height: 5px !important;
+}
 
-    .menu ul {
-        list-style-type: none;
-        display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
-        height: 10%;
-    }
+.hr-index {
+    background: rgb(172,232,33);
+    background: linear-gradient(90deg, rgba(172,232,33,1) 0%, rgba(159,218,24,1) 20%, rgba(136,189,13,1) 50%, rgba(159,218,24,1) 80%, rgba(172,232,33,1) 100%);
+}
 
-    .menu ul li {
-        width: 140px;
-        font-size: 10px;
-    }
+.h1Banner {
+    color: black;
+    font-weight: 100;
+}
 
-    .menu ul li a {
-        color: black;
-        font-size: x-large;
-        padding: 20px 0;
-    }
+.sBanner {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    background-color: black;
+    color: rgb(241, 219, 190);
+}
 
-    .menu ul.nav-menu {
-        flex: 1;
-        margin-left: 20px;
-    }
+.text-center-h2 {
+    padding-bottom: 40px;
+    background-color: rgba(203, 248, 203, 0.178);
 
-    .nav-menu a:hover {
-        text-decoration: underline 3px #88bd0d;
-        color: #88bd0d;
-        cursor:pointer;
-    }
+}
 
-    #inicio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.hero { /*EN DESUSO POR EL MOMENTO*/
+    background-image: url(../Img/VARIOS/bannerPlantas.jpg);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+}
 
-    
-    .nav-menu {
-        width: 10px;
-        justify-content: center;
-    } 
+.carousel-inner {
+    margin-top: 10px;
+}
 
-  .nav-brand {
-    width: 90px;
-    border-bottom-width: 2px;
-    border-left-width: 2px;
-    border-right-width: 2px;
-    border-top-width: 2px;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-top-style: solid;
-    float:inline-start;
-    margin-left: 200px;
-    
-    }   
+.serviciosPadre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
-    #banner h2 {
-        font-size: 30px;
-    }
+.serviciosHijo {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    #seccionPrincipal {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin-top: 20px;
-    }
+.serviciosHijo img {
+    max-width: 290px;
+    max-height: 290px;
+}
 
-    .staff {
-        font-size: 20px;
-        background-color:rgba(214, 243, 200, 0.356);
-        padding-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 300px;
-    }
-
-    .infoStaff {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        cursor: pointer;
-    }
-
-    .infoStaff article:hover {
-        background-color: #88bd0d;
-        border-radius: 15px;
-        border: dashed #88bd0d 2px;
-    }
-
-    .infoStaff h5,h4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-    }
-
-    .infoStaff h5 {
-        text-align: center;
-    }
-
-    .infoStaff h4 {
-        text-align: center;
-    }
-
-    .infoStaff article {
-        border: dashed rgba(0, 0, 0, 0.096) 2px;
-        margin: 30px 70px 30px 70px;
-        background-color: rgba(8, 31, 15, 0.795);
-        border-radius: 15px;
-    }
-
-    .conoce {
-        margin-right: 100px;
-        text-align: center;
-    }
-
-    .asesorate {
-        font-size: 20px;
-    }
-
-    .conoce {
-        margin-left: 100px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        padding-top: 10px;
-        color: rgb(1, 44, 1);
-    }
-    .asesorate {
-        text-align: center;
-        font-size: 30px;
-        background-color: rgba(4, 59, 8, 0.267);
-        margin: 50px 40% 0 40%;
-    }
-
-    .asesorate:hover {
-        border: 3px dotted rgba(255, 0, 0, 0);
-        border-radius: 10px;
-    }
-
-    .staff {
-        height: 60%;
-    }
-
-    #textCSFit {
-        margin-bottom: 20px;
-    }
-
-    
-    .bannerDesc {
-        background-image: url(../Img/VARIOS/bannerPlantas.jpg);
-        color: rgb(255, 255, 255);
-        padding: 2% 0;
-        margin: 1% 1.5%;  
-        font-size: 30px;  
-        text-align: center;
-        border-radius: 10px;
-    }
-
-    .bannerDesc h2 {
-        background-color: black;
-        margin-left: 22%;
-        margin-right: 22%;
-    }
-
-    .textIndex h2 {
-        color: rgb(1, 44, 1);
-    }
-
-    .textIndex p {
-        color: rgb(14, 37, 0);
-    }
-
-    .textIndex {
-        border: green solid 5px;
-        padding: 0 20px;
-        text-align: center;
-        margin-left: 10px;
-        border-radius: 10px;
-        font-size: 24px;
-    }
-
-    
-    #footer {
-        background-color: rgba(92, 86, 86, 0.459);
-        border-radius: 3px;
-        border-top: 1px solid rgb(213, 253, 212);
-        width: 100%;
-        height: 100%;
-        bottom: 0; 
-    }
-
-    #footer h2 {
-        background-color: #0000000e;
-        color: rgba(255, 255, 255, 0.781);
-        text-align: center;
-        margin: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .redes {
-        margin-top: 55px;
-        display: block;
-        margin-left: 5%;
-        margin-right: 75%;
-    }
-
-    .ulRedes {
-        position:relative;
-        top:50%;
-        left:50%;
-        transform:translate(-50%, -50%);
-        display:flex;
-        margin:0;
-        padding:0;
-    }
-
-    .ulRedes li {
-        list-style:none;
-        margin:0 5px;
-    }
-
-    .ulRedes li a .fa {
-        color: #262626;
-        line-height:80px;
-        transition: .5s;
-        padding-right: 14px;
-    }
-
-    .ulRedes li a span {
-        padding:0;
-        margin:0;
-        position:relative;
-        bottom: 80px;
-        right: 20px;
-        color: #0c0c0c;
-        font-size: 12px;
-        letter-spacing: 2px;
-        transition: .5s;
-    }
-
-    .ulRedes li a {
-        text-decoration: none;
-        display:block;
-        width:50px;
-        height:20px;
-        background: #fff;
-        text-align: center;
-        padding-left: 20px;
-        transition:.10s;
-        
-    }
-
-    .ulRedes li:hover span {
-        color:#fff;
-    }
-
-    .ulRedes li:hover:nth-child(1) a{
-        background: #3b5998;
-    }
-    .ulRedes li:hover:nth-child(2) a{
-        background: #00aced;
-    }
-    .ulRedes li:hover:nth-child(3) a{
-        background: #d140b2;
-    }
-    .contacto {
-        border-radius: 10px;
-        color: rgb(255, 255, 255);
-        margin-top: 10px;
-        width: 20%;
-        text-align: right;
-        padding: 3px;
-        margin-left: 75%;
-    }
-
-    .logoFooter {
-        margin-left: 45px;
-        position: relative;
-        top: 70px;
-        display: block;
-        align-items: flex-end;
-    }
-
-    .nav-brand-footer {
-        width: 80px;
-        border-bottom-width: 4px;
-        border-left-width: 4px;
-        border-right-width: 4px;
-        border-top-width: 4px;
-        border-left-style: solid;
-        border-right-style: solid;
-        border-bottom-style: solid;
-        border-top-style: solid;
-    } 
-
-    .contacto p {   
-        float: right;
-    }
+.equipo {
+    background-color: #85c434;
 }
 
 
-/*version escritorio*/
-@media screen and (min-width:900px) {
-    /*INDEX*/
-    #inicio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #mainIndex {
-        display: flex;
-        flex-direction: column;
-        width: 90%;    
-        margin-bottom: 25px; 
-    }
-
-    #seccionPrincipal {
-        display: grid;
-        grid-template-columns: 70% 30%;
-    }
-
-    #textCSfit {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-row-gap: 10px;
-    }
-
-    h1 {
-        color: #88bd0d;
-        font-size: 70px;
-        text-align: center;
-    }
-
-    .staff {
-        font-size: 20px;
-        background-color:rgba(214, 243, 200, 0.356);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 150px;
-    }
-
-    .infoStaff {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        cursor: pointer;
-    }
-
-    .infoStaff article {
-        border: dashed rgba(0, 0, 0, 0.096) 2px;
-        margin: 30px 70px 30px 70px;
-        background-color: rgba(8, 31, 15, 0.795);
-        border-radius: 15px;
-    }
-
-    .infoStaff h5,h4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-    }
-
-    .infoStaff article:hover {
-        background-color: #88bd0d;
-        border-radius: 15px;
-        border: dashed #88bd0d 2px;
-    }
-
-    .conoce {
-        margin-left: 100px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        padding-top: 10px;
-        color: rgb(1, 44, 1);
-    }
-    .asesorate {
-        text-align: center;
-        font-size: 30px;
-        background-color: rgba(4, 59, 8, 0.267);
-        margin: 50px 40% 0 40%;
-    }
-
-    .asesorate:hover {
-        border: 3px dotted rgba(255, 0, 0, 0);
-        border-radius: 10px;
-    }
-
-    .bannerDesc {
-        background-image: url(../Img/VARIOS/bannerPlantas.jpg);
-        color: rgb(255, 255, 255);
-        padding: 2% 0;
-        margin: 1% 1.5%;  
-        font-size: 30px;  
-        text-align: center;
-        border-radius: 10px;
-    }
-
-    .bannerDesc h2 {
-        background-color: black;
-        margin-left: 22%;
-        margin-right: 22%;
-    }
-
-    .textIndex h2 {
-        color: rgb(1, 44, 1);
-    }
-
-    .textIndex p {
-        color: rgb(14, 37, 0);
-    }
-
-    .textIndex {
-        border: green solid 5px;
-        padding: 0 20px;
-        text-align: center;
-        margin-left: 10px;
-        border-radius: 10px;
-        font-size: 24px;
-    }
-
-    /*RUTINAS*/
-
-    .bodyRutinas {
-        background-color: rgba(156, 97, 97, 0.329);
-    }
-
-    .menuRutinas {
-        text-align: center;
-        border-bottom: 2.5px solid #e00e0e;
-    }
-
-    .menuRutinas ul {
-        list-style-type: none;
-        display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
-        height: 10%;
-        width: 100%;
-    }
-
-    .menuRutinas ul li {
-        width: 140px;
-        font-size: 10px;
-    }
-
-    .menuRutinas ul li a {
-        color: black;
-        font-size: x-large;
-        padding: 20px 0;
-    }
-
-    .menuRutinas ul.nav-menu-rutinas {
-        flex: 1;
-        margin-left: 20px;
-    }
-
-    .nav-menu-rutinas a:hover {
-        text-decoration: underline 3px #e00e0e;
-        color: #e00e0e;
-        cursor:pointer;
-    }
-
-    .nav-menu-rutinas {
-        width: 10px;
-        justify-content: center;
-        margin-right: 60px;
-    } 
-
-    .gradienteRutinas {
-        background-image: linear-gradient(to right,  rgba(158, 0, 0, 0), rgba(168, 16, 16, 0.637), rgba(158, 0, 0, 0));
-        text-align: center;
-        font-size: 25px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        color: rgb(32, 1, 1);
-    }
-    
-    .bannerRutinas {
-        width: 100%;
-    }
-
-    .seccionPrincipalRutinas {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        width: 100%;
-        height: 100%;
-        font-size: 30px;
-        background-image: url(../Img/RUTINAS/banner2\ \(1\).jpg);
-        margin-bottom: 30px;
-    }
-
-    .seccionPrincipalRutinas div {
-        margin: 30px 70px 30px 70px;
-        background-color: rgba(0, 0, 0, 0.781);
-        border-radius: 10px;
-        color: rgba(218, 47, 47, 0.911);
-        margin-left: 200px;
-        margin-right: 200px;
-    }
-
-    .seccionPrincipalRutinas h2 {
-        text-align: center;
-    }
-
-    .seccionPrincipalRutinas p {
-        text-align: justify;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .seccionPrincipalRutinas strong:hover {
-        text-decoration: underline rgba(184, 37, 37, 0.836);
-        cursor: pointer;
-    }
-
-    
-
-    /*RECETAS*/
-
-    .menuRecetas {
-        text-align: center;
-        border-bottom: 2.5px solid rgb(63, 184, 178);
-    }
-
-    .menuRecetas ul {
-        list-style-type: none;
-        display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
-        height: 10%;
-        width: 100%;
-    }
-
-    .menuRecetas ul li {
-        width: 140px;
-        font-size: 10px;
-    }
-
-    .menuRecetas ul li a {
-        color: black;
-        font-size: x-large;
-        padding: 20px 0;
-    }
-
-    .menuRecetas ul.nav-menu {
-        flex: 1;
-        margin-left: 20px;
-    }
-
-    .nav-menu-recetas a:hover {
-        text-decoration: underline 3px rgb(63, 184, 178);
-        color: rgb(63, 184, 178);
-        cursor:pointer;
-    }
-
-    .nav-menu-recetas {
-        width: 10px;
-        justify-content: center;
-        margin-right: 60px;
-    } 
-
-
-    .bannerRecetas {
-        background-image: url(../Img/RECETAS/bannerRecetas.jpg);
-        padding: 2% 0;
-        margin: 1% 1.5%;  
-        text-align: center;
-        border-radius: 10px;
-        background-color: black;
-    }
-
-    .bannerRecetas h2 {
-        font-size: 40px;
-        color: rgb(45, 112, 109);
-    }
-
-    .articulosRecetas {
-        width: 88%;
-        padding: 1px;
-        display: inline;
-    }
-
-    .articulosRecetas article {
-        height: 300px;
-        font-size: 20px;
-        font-family: 'Oswald', sans-serif;
-        color: rgb(17, 141, 141);
-        margin-bottom: 110px;
-    }
-
-    .articulosRecetas p { 
-        text-align: justify;
-        font-size: 25px;
-    }
-
-    .articulosRecetas img {
-        border-radius: 5px;
-        width: 450px;
-        height: 300px;
-    }
-
-    .articulosRecetas h3:hover {
-        text-decoration: underline rgb(17, 141, 141) 2px;
-    }
-
-    .articuloIzq {
-        text-align: left;
-        margin-right: 20%;
-    }
-
-    .articuloIzq img {
-        float: left;
-        padding-right: 30px;
-        margin-left: 2%;
-    }
-
-    .articuloDer {
-        text-align: right;
-        margin-left: 20%;
-    }
-
-    .articuloDer img {
-        float: right;
-        padding-left: 30px;
-        margin-right: 2%;
-    }
-
-    /*TIPS*/
-
-    .bodyTips {
-        background-color: #bc8fda2d;
-    }
-
-    .menuTips {
-        text-align: center;
-        border-bottom: 2.5px solid #780dc0;
-    }
-
-    .menuTips ul {
-        list-style-type: none;
-        display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
-        height: 10%;
-        width: 100%;
-    }
-
-    .menuTips ul li {
-        width: 140px;
-        font-size: 10px;
-    }
-
-    .menuTips ul li a {
-        color: black;
-        font-size: x-large;
-        padding: 20px 0;
-    }
-
-    .menuTips ul.nav-menu {
-        flex: 1;
-        margin-left: 20px;
-    }
-
-    .nav-menu-tips a:hover {
-        text-decoration: underline 3px #780dc0;
-        color: #780dc0;
-        cursor:pointer;
-    }
-
-    .nav-menu-tips {
-        width: 10px;
-        justify-content: center;
-        margin-right: 60px;
-    } 
-
-    #scrollContainer {
-      display: block;
-      margin: 0 auto;
-      text-align: center;
-      width: 50%;
-      height: 200px;
-      overflow-y: scroll;
-      scroll-behavior: smooth;
-      background-color: #0000000e;
-      margin-top: 20px;
-    }
-
-    #scrollContainer article {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 40%;
-      font-size: 23px;
-      margin-bottom: 60px;
-      margin-top: 50px;
-      color: #25013d;
-    }
-
-    #tips {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3 1fr);
-      column-gap: 50px;
-      row-gap: 20px;
-      height: 60%;
-      width: 40%;
-      margin: 40px auto 20px auto;
-      align-items: center;
-    }
-
-    #tips article {
-      display: flex;
-      margin: auto;
-      justify-items: center;
-      align-items: center;
-      background-color: #780dc0bd;
-      border-radius: 15px;
-      height: 100%;
-      width: 100%;
-      font-size: 20px;
-      text-align: center;
-      transition: all 2s;
-    }
-
-    #tips article:hover {
-      height: 70%;
-      width: 100%;
-      padding: 20px;
-      background-color: #bd22d1e0;
-    }
-
-    #tips strong:hover {
-      text-decoration: underline #000000e0;
-      cursor: pointer;
-    }
-
-    /*TIENDA*/
-
-    .bodyTienda {
-        background-color: rgba(255, 203, 203, 0.26);
-    }
-
-    .menuTienda {
-        text-align: center;
-        border-bottom: 2.5px solid rgb(250, 182, 182);
-    }
-
-    .menuTienda ul {
-        list-style-type: none;
-        display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
-        height: 10%;
-        width: 100%;
-    }
-
-    .menuTienda ul li {
-        width: 140px;
-        font-size: 10px;
-    }
-
-    .menuTienda ul li a {
-        color: black;
-        font-size: x-large;
-        padding: 20px 0;
-    }
-
-    .menuTienda ul.nav-menu-tienda {
-        flex: 1;
-        margin-left: 20px;
-    }
-
-    .nav-menu-tienda a:hover {
-        text-decoration: underline 3px rgb(250, 182, 182);
-        color: rgb(250, 182, 182);
-        cursor:pointer;
-    }
-
-    .nav-menu-tienda {
-        width: 10px;
-        justify-content: center;
-        margin-right: 60px;
-    } 
-
-    .navegacion {
-        background-color: rgba(223, 6, 6, 0.205);
-        border: inset rgba(238, 73, 73, 0.397) 2px;
-        border-radius: 2px;
-        position: relative;
-        width: auto;
-        height: 80px;
-        text-align: center;
-        margin-top: 10px;
-    }
-    
-    .navegacion ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .navegacion a:hover {
-        text-decoration: underline black 2px;
-    }
-
-    .navegacion li:hover {
-        text-decoration: underline black 2px;
-    }
-
-    .navegacion li, .navegacion a {
-        padding: 10px;
-        font-size: 15px;
-        text-decoration: none;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: black;
-        word-spacing: 2px;
-        cursor: pointer;
-        color: rgb(5, 71, 8);
-    }
-
-    .categoriasDesplegable {
-        display: none;
-        position: absolute;
-        background-color: #fafcf985;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.377);
-        z-index: 1;
-        border-radius: 10px;
-    }
-
-    .categoriasDesplegable a {
-        color: rgb(7, 49, 97);
-        margin-top: 10px;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-
-    .categoriasDesplegable a:hover {
-        border-radius: 10px;
-    }
-    .cajaCategorias:hover .categoriasDesplegable {
-        display: block;
-    }
-
-    .productosTienda {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3 1fr);
-        column-gap: 50px;
-        row-gap: 20px;
-        height: 100%;
-        width: 80%;
-        margin: 40px auto 20px auto;
-        text-align: center;    
-    }
-
-    .productosTienda article {
-        border: solid black 2px;
-        justify-items: center;
-    }
-
-    .productosTienda img {
-        width: 300px;
-        height: 300px;
-        padding-top: 20px;
-    }
-
-    .productosTienda p {
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .productosTienda .precio {
-        font-size: 30px;
-        border: solid 1px black;
-        margin: 0 10px;
-    }
-
-    /*GENERAL*/
-
-    .nav-brand {
-        width: 110px;
-        border-bottom-width: 5px;
-        border-left-width: 5px;
-        border-right-width: 5px;
-        border-top-width: 5px;
-        border-left-style: solid;
-        border-right-style: solid;
-        border-bottom-style: solid;
-        border-top-style: solid;   
-        position: absolute;
-        right: 88%;
-        bottom: 80%;
-    }   
-    .nav-brand-footer {
-        width: 80px;
-        border-bottom-width: 5px;
-        border-left-width: 5px;
-        border-right-width: 5px;
-        border-top-width: 5px;
-        border-left-style: solid;
-        border-right-style: solid;
-        border-bottom-style: solid;
-        border-top-style: solid;
-    }   
-
-    body {
-        background-color: rgb(230, 225, 228);
-    }
-
-    .menu {
-        text-align: center;
-        border-bottom: 2.5px solid #88bd0d;
-    }
-
-    .menu ul {
-        list-style-type: none;
-        display: inline-flex; /*para que quede una al lado de la otra y no formato lista*/
-        height: 10%;
-        width: 100%;
-    }
-
-    .menu ul li {
-        width: 140px;
-        font-size: 10px;
-    }
-
-    .menu ul li a {
-        color: black;
-        font-size: x-large;
-        padding: 20px 0;
-    }
-
-    .menu ul.nav-menu {
-        flex: 1;
-        margin-left: 20px;
-    }
-
-    .nav-menu a:hover {
-        text-decoration: underline 3px #88bd0d;
-        color: #88bd0d;
-        cursor:pointer;
-    }
-
-    .nav-menu {
-        width: 10px;
-        justify-content: center;
-        margin-right: 60px;
-    } 
-
-    #footer {
-        background-color: rgba(92, 86, 86, 0.459);
-        border-radius: 3px;
-        border-top: 1px solid rgb(213, 253, 212);
-        width: 100%;
-        height: 100%;
-    }
-
-    #footer h2 {
-        background-color: #0000000e;
-        color: rgba(255, 255, 255, 0.781);
-        text-align: center;
-        margin: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .redes {
-        margin-top: 55px;
-        display: block;
-        margin-left: 5%;
-        margin-right: 75%;
-    }
-
-    .ulRedes {
-        position:relative;
-        top:50%;
-        left:50%;
-        transform:translate(-50%, -50%);
-        display:flex;
-        margin:0;
-        padding:0;
-    }
-
-    .ulRedes li {
-        list-style:none;
-        margin:0 5px;
-    }
-
-    .ulRedes li a .fa {
-        color: #262626;
-        line-height:80px;
-        transition: .5s;
-        padding-right: 14px;
-    }
-
-    .ulRedes li a span {
-        padding:0;
-        margin:0;
-        position:relative;
-        bottom: 80px;
-        right: 20px;
-        color: #0c0c0c;
-        font-size: 12px;
-        letter-spacing: 2px;
-        transition: .5s;
-    }
-
-    .ulRedes li a {
-        text-decoration: none;
-        display:block;
-        width:50px;
-        height:20px;
-        background: #fff;
-        text-align: center;
-        padding-left: 20px;
-        transition:.10s;
-        
-    }
-
-    .ulRedes li:hover span {
-        color:#fff;
-    }
-
-    .ulRedes li:hover:nth-child(1) a{
-        background: #3b5998;
-    }
-    .ulRedes li:hover:nth-child(2) a{
-        background: #00aced;
-    }
-    .ulRedes li:hover:nth-child(3) a{
-        background: #d140b2;
-    }
-    .contacto {
-        border-radius: 10px;
-        color: rgb(255, 255, 255);
-        margin-top: 10px;
-        width: 20%;
-        text-align: right;
-        padding: 3px;
-        margin-left: 75%;
-    }
-
-    .logoFooter {
-        margin-left: 45px;
-        position: relative;
-        top: 70px;
-        display: block;
-        align-items: flex-end;
-    }
+.equipo p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+.conoce {
+    color: black;
+    font-size: 25px;
+}
+
+.logo {
+    max-width: 80px;
+    border: black solid 2px;
 }
 
 
+.ml-5 {
+    margin-left: 1rem;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px){
+    .serviciosPadre {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*RUTINAS*/
+
+.h2Rutinas {
+    color: #6cdabe;
+    font-size: 57px;
+    text-align: center;
+}
+
+.hr-rutinas {
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7ecae4, #90d3a4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9ad8ec, #84e9a3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.categorias {
+    color: #30e4b4;
+}
+
+.categorias p{
+    font-size: 18px;
+}
+
+p {
+   color: rgb(126, 126, 126);
+}
+
+  .content-block-5 .swiper-slide {
+    width: 242px !important;
+  }
+
+  .content-block-5 .swiper-button-next,
+  .content-block-5 .swiper-button-prev {
+    top: 8px;
+    height: 240px;
+    padding: 0 20px;
+  }
+
+  .content-block-5 .swiper-button-next-gradient,
+  .swiper-button-prev-gradient {
+    position: absolute;
+    width: 100%;
+    content: '';
+    top: 0;
+    left: auto;
+    height: 250px;
+  }
+
+  .content-block-5 .swiper-button-next-gradient {
+    right: 0;
+  }
+
+  .content-block-5 .swiper-button-prev-gradient {
+    left: 0;
+  }
+
+  .content-block-5 .swiper-button-next > svg,
+  .content-block-5 .swiper-button-prev > svg {
+    margin-top: 70px;
+    margin-bottom: auto;
+  }
+
+  .content-block-1 .pb-card {
+    height: 15rem;
+  }
+
+  .pb-card {
+    background-color: rgba(0,0,0,0); 
+    color: #00f8b6ff
+  }
+
+  @media screen and (min-width: 1280px) {
+    .content-block-1 .pb-card {
+      height: 26rem;
+    }
+  }
 
 
+/*RECETAS*/
 

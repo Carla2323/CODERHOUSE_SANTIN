@@ -1,122 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>CSfit-recetas</title>
-    <link rel="stylesheet" href="./Estilos/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./estilos/estilos.css">
+        <!--AOS-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>CSFit</title>
+    </head>
 <body>
-    <header>
-        <!--Barra de navegación-->
-        <h1>Bienvenidos a CSfit, tu lugar saludable!</h1>
-        <div class="container">
-            <nav class="menuRecetas">
-                    <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand">
-                <ul class="nav-menu-recetas">
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                        
-                    <li>
-                        <a href="Rutinas.html">Rutinas</a>
-                    </li>
-                        
-                    <li>
-                        <a href="Recetas.html">Recetas</a>
-                    </li>
-                        
-                    <li>
-                        <a href="Tips.html">Tips</a>
-                    </li>
-                        
-                    <li>
-                        <a href="Tienda.html">Tienda</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main id="recetas">
-        <!--Primera sección-->
-        <div class="bannerRecetas">
-            <h2>La mejor perspectiva para tu salud</h2>
-        </div>
-        <div class="articulosRecetas">
-            <article class="articuloIzq" data-aos="fade-right">
-                <img src="./Img/RECETAS/proteinas.jpg" alt="Imagen del primer articulo">
-                <h3>PROTEICAS</h3>
-                <p>Nada mejor para una alimentación saludable y un buen desarrollo de los músculos incluir proteinas en nuestros platos. Si te aburris de comer carne siempre de la misma forma, no te gusta el pescado o no sabes que hacer con el pollo que sobró, en este articulo tenemos mas de 100 recetas para que puedas probar cosas distintas, optimizar tiempos, no desperdiciar nada y disfrutar comiendo saludable. No es dieta, son hábitos!</p>
-            </article>
-            <article class="articuloDer" data-aos="fade-left">
-                <img src="./Img/RECETAS/pocosIngredientes.jpg" alt="Imagen del segundo articulo">
-                <h3>POCOS INGREDIENTES</h3>
-                <p>Si sos de esas personas que no se llevan bien con la cocina, te brindamos muchas recetas con no mas de 5 ingredientes y muy fáciles de hacer, para que te salven en esos dias que te llama el delivery. Podes freezar cualquiera de estos platos y guardarlos para organizarte mejor en la semana, que solemos tener menos tiempo para cocinar. No es dieta, son hábitos!</p>
-            </article>
-            <article class="articuloIzq" data-aos="fade-right">
-                <img src="./Img/RECETAS/rapido.jpg" alt="Imagen del primer articulo">
-                <h3>DESAYUNOS EXPRESS</h3>
-                <p>Si a la mañana preferis invertir tu tiempo en otras cosas y no queres gastarlo en hacerte un desayuno, te proponemos que entres a mirar los desayunos express que tenemos porque son una bomba y no toman más de 5 minutos en hacerse, además tendrás energías para afrontar todo tu dia de la mejor manera. Dale a tu cuerpo la comida más importante del día y rendí mejor que nadie. No es dieta, son hábitos!</p>
-            </article>
-            <article class="articuloDer" data-aos="fade-left">
-                <img src="./Img/RECETAS/aptoCeliaco.png" alt="Imagen del segundo articulo">
-                <h3>APTO CELIACOS</h3>
-                <p>Si no podes o simplemente a veces preferis no comer con gluten, no podes dejar de mirar nuestras recetas (dulces y saladas) que tenemos, super variadas, fáciles y económicas. ¿Qué esperas para probar? No es dieta, son hábitos!</p>
-            </article>
-            <article class="articuloIzq" data-aos="fade-right">
-                <img src="./Img/RECETAS/vegano.jpg" alt="Imagen del primer articulo">
-                <h3>APTO VEGAN</h3>
-                <p>Una dieta vegana elimina todo el co­lesterol y casi todas las grasas saturadas, y reduce la cantidad total de grasas poliinsa­turadas para mantener una salud óptima y evitar las enfermedades cardiovasculares. Si estás entrando en el mundo del veganismo, te ayudaremos con las recetas básicas para que puedas tener tus comidas organizadas y completas. No es dieta, son hábitos!</p>
-            </article>
-            <article class="articuloDer" data-aos="fade-left">
-                <img src="./Img/RECETAS/vegetariano.jpg" alt="Imagen del segundo articulo">
-                <h3>VEGETARIANAS</h3>
-                <p>Si todavia no te animas a probar este estilo de vida, este es el momento! Te dejamos distintas recetas completas con los nutrientes necesarios para que comiences una alimentación saludable sin consumo de carne. No es dieta, son hábitos! </p>
-            </article>
-        </div>
-    </main>
-    <!-- Inicio de footer -->
-    <footer id="footer">
-        <!-- Redes sociales de la pagina -->
-        <h2>CONTACTANOS</h2>
-        <div class="redes"> 
-            <ul class="ulRedes">
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <span> - Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/?lang=es" target="_blank">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <span> - Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <span> - Instagram</span>
-                    </a>
-                </li>
+  <header>        
+    <h1>Bienvenido a CSFit, tu lugar saludable!</h1>  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="./Img/VARIOS/posibleLogo.jpg" alt=""></a> <!--a la img ponele class="image-fluid"-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rutinas.html">Rutinas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recetas.html">Recetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tips.html">Tips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tienda.html">Tienda</a>
+              </li>
             </ul>
+          </div>
         </div>
-        <div class="logoFooter">
-            <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand-footer">
+      </nav>
+      <hr class="m-0 hr-index">
+</header>
+    <main id="recetas">
+      <!--Primera sección-->
+      <div class="bannerRecetas">
+          <h2 class="bannerRecetas__titulo">La mejor perspectiva para tu salud</h2>
+      </div>
+      <section class="servicios mt-5">
+        <div class="containerRecetas">
+            <h2 class="text-center text-center-h2-recetas">PODRÁS ENCONTRAR...</h2>
+            <div class="containerRecetas__serviciosPadre-recetas text-center">
+                <div class="containerRecetas__serviciosHijo-recetas">
+                    <h3>Recetas proteicas</h3>
+                    <img class="img-fluid" src="Img/RECETAS/chicken_41518.png">
+                    <p>Las mejores formas d ecomer carne!</p>
+                </div>
+                <div class="containerRecetas__serviciosHijo-recetas">
+                    <h3>Dulce</h3>
+                    <img class="img-fluid" src="#" alt="foto algo dulce">
+                    <p>No le tengas miedo a lo dulce, date un permitido! Apto celiacos</p>
+                </div>
+                <div class="containerRecetas__serviciosHijo-recetas">
+                    <h3>Apto vegan</h3>
+                    <img class="img-fluid" src="#" alt="foto ensalada">
+                    <p>Las formas más ricas de comer verduras!</p>
+                </div>
+            </div>
         </div>
-        <!-- Datos de contacto -->
-        <div class="contacto">
-            <p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="rgb(17, 141, 141)" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,101.3C384,117,480,171,576,208C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+          </svg>
+    </section>
+      <div class="Recetas">
+          <article class="Recetas__articuloIzq" data-aos="fade-right">
+              <img src="./Img/RECETAS/proteinas.jpg" alt="Imagen del primer articulo">
+              <h3>PROTEICAS</h3>
+              <p>Nada mejor para una alimentación saludable y un buen desarrollo de los músculos incluir proteinas en nuestros platos. Si te aburris de comer carne siempre de la misma forma, no te gusta el pescado o no sabes que hacer con el pollo que sobró, en este articulo tenemos mas de 100 recetas para que puedas probar cosas distintas, optimizar tiempos, no desperdiciar nada y disfrutar comiendo saludable. No es dieta, son hábitos!</p>
+          </article>
+          <article class="Recetas__articuloDer" data-aos="fade-left">
+              <img src="./Img/RECETAS/pocosIngredientes.jpg" alt="Imagen del segundo articulo">
+              <h3>POCOS INGREDIENTES</h3>
+              <p>Si sos de esas personas que no se llevan bien con la cocina, te brindamos muchas recetas con no mas de 5 ingredientes y muy fáciles de hacer, para que te salven en esos dias que te llama el delivery. Podes freezar cualquiera de estos platos y guardarlos para organizarte mejor en la semana, que solemos tener menos tiempo para cocinar. No es dieta, son hábitos!</p>
+          </article>
+          <article class="Recetas__articuloIzq" data-aos="fade-right">
+              <img src="./Img/RECETAS/rapido.jpg" alt="Imagen del primer articulo">
+              <h3>DESAYUNOS EXPRESS</h3>
+              <p>Si a la mañana preferis invertir tu tiempo en otras cosas y no queres gastarlo en hacerte un desayuno, te proponemos que entres a mirar los desayunos express que tenemos porque son una bomba y no toman más de 5 minutos en hacerse, además tendrás energías para afrontar todo tu dia de la mejor manera. Dale a tu cuerpo la comida más importante del día y rendí mejor que nadie. No es dieta, son hábitos!</p>
+          </article>
+          <article class="Recetas__articuloDer" data-aos="fade-left">
+              <img src="./Img/RECETAS/aptoCeliaco.png" alt="Imagen del segundo articulo">
+              <h3>APTO CELIACOS</h3>
+              <p>Si no podes o simplemente a veces preferis no comer con gluten, no podes dejar de mirar nuestras recetas (dulces y saladas) que tenemos, super variadas, fáciles y económicas. ¿Qué esperas para probar? No es dieta, son hábitos!</p>
+          </article>
+          <article class="Recetas__articuloIzq" data-aos="fade-right">
+              <img src="./Img/RECETAS/vegano.jpg" alt="Imagen del primer articulo">
+              <h3>APTO VEGAN</h3>
+              <p>Una dieta vegana elimina todo el co­lesterol y casi todas las grasas saturadas, y reduce la cantidad total de grasas poliinsa­turadas para mantener una salud óptima y evitar las enfermedades cardiovasculares. Si estás entrando en el mundo del veganismo, te ayudaremos con las recetas básicas para que puedas tener tus comidas organizadas y completas. No es dieta, son hábitos!</p>
+          </article>
+          <article class="Recetas__articuloDer" data-aos="fade-left">
+              <img src="./Img/RECETAS/vegetariano.jpg" alt="Imagen del segundo articulo">
+              <h3>VEGETARIANAS</h3>
+              <p>Si todavia no te animas a probar este estilo de vida, este es el momento! Te dejamos distintas recetas completas con los nutrientes necesarios para que comiences una alimentación saludable sin consumo de carne. No es dieta, son hábitos! </p>
+          </article>
+      </div>
+  </main>
+  <hr class="m-0">
+   <!--Inicio del footer-->
+   <footer class="footer pt-5">
+    <div class="container-fluid">
+      <div class="row justify-content-center" >
+        <div class="col-md-4">
+          <h4>CONTACTANOS</h4>
+        </div>
+      </div>
+      <div class="row justify-content-start" >
+          <div class="col-md-4">
+            <img class="footer__logo " src="./Img/VARIOS/posibleLogo.jpg" alt="">
+            <!-- Datos de contacto -->
+            <div class="footer__contacto">
+              <p class="footer__conoce">
                 <strong>mail:</strong> example@gmail.com <br>
                 <strong>tel:</strong> 4547-3345
-            </p>
+              </p>
+            </div>
+          </div>
         </div>
-    </footer>
+  </div>
+</footer>
+
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--LIBREERIA AOS-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
-    </script>    
+        AOS.init();
+    </script> 
 </body>
 </html>

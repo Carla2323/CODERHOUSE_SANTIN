@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSfit-tienda</title>
-    <link rel="stylesheet" href="./Estilos/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     
-</head>
-<body class="bodyTienda">
-    <header>
-        <!--Barra de navegación-->
-        <h1>Bienvenidos a CSfit, tu lugar saludable!</h1>
-        <div class="container">
-            <nav class="menuTienda">
-                <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand">
-                <ul class="nav-menu-tienda">
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                        
-                    <li>
-                        <a href="Rutinas.html">Rutinas</a>
-                    </li>
-                        
-                    <li>
-                        <a href="Recetas.html">Recetas</a>
-                    </li>
-                        
-                    <li>
-                        <a href="Tips.html">Tips</a>
-                    </li>
-                        
-                    <li>
-                        <a href="Tienda.html">Tienda</a>
-                    </li>
-                </ul>
-            </nav>
-    </header>
-    <main>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./estilos/estilos.css">
+        <title>CSFit</title>
+    </head>
+    <body>
+        <header>        
+            <h1>Bienvenido a CSFit, tu lugar saludable!</h1>  
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img class="footer__logo" src="./Img/VARIOS/posibleLogo.jpg" alt=""></a> <!--a la img ponele class="image-fluid"-->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="rutinas.html">Rutinas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="recetas.html">Recetas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="tips.html">Tips</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="tienda.html">Tienda</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <hr class="m-0 hr-index">
+        </header>
         <!--Primera sección-->
         <nav class="navegacion">
             <ul>
-                <li class="cajaCategorias">Entrenamientos
-                    <div class="categoriasDesplegable">
-                        <a href="./Tienda/discos.html">Discos</a>
-                        <a href="./Tienda/colchoneta.html">Colchonetas</a>
-                        <a href="./Tienda/mancuernas.html">Mancuernas</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./Tienda/cocina.html">cocina</a>
-                </li>
-                <li class="cajaCategorias">Ropa
-                    <div class="categoriasDesplegable">
-                        <a href="./Tienda/mujer.html">Mujer</a>
-                        <a href="./Tienda/hombre.html">Hombre</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./Tienda/viandas.html">viandas</a>
-                </li>
+            <li class="cajaCategorias">Entrenamientos
+                <div class="categoriasDesplegable">
+                    <a href="./Tienda/discos.html">Discos</a>
+                    <a href="./Tienda/colchoneta.html">Colchonetas</a>                    <a href="./Tienda/mancuernas.html">Mancuernas</a>
+                </div>
+            </li>
+            <li>
+                <a href="./Tienda/cocina.html">cocina</a>
+            </li>
+            <li class="cajaCategorias">Ropa
+                <div class="categoriasDesplegable">
+                    <a href="./Tienda/mujer.html">Mujer</a>
+                    <a href="./Tienda/hombre.html">Hombre</a>
+                </div>
+            </li>
+            <li>
+                <a href="./Tienda/viandas.html">viandas</a>
+            </li>
             </ul>
         </nav>
         <!--Segunda sección-->
@@ -69,271 +70,89 @@
         data-aos-easing="linear"
         data-aos-duration="1500">
             <article>
-                <img src="./Img/TIENDA/disco2.jpeg" alt="discos">
+                <img class="productosTienda__img" src="./Img/TIENDA/disco2.jpeg" alt="discos">
                 <hr>
                 <p>DISCO</p>
                 <P> 10KG X2U</P>
-                <p class="precio">$2000</p>
+                <p class="productosTienda__precio">$2000</p>
             </article>
             <article>
-                <img src="./Img/TIENDA/disco1.jpeg" alt="discos">
+                <img class="productosTienda__img" src="./Img/TIENDA/disco1.jpeg" alt="discos">
                 <hr>
                 <p>DISCO</p>
                 <P> 5KG X3U</P>
-                <p class="precio">$1500</p>
+                <p class="productosTienda__precio">$1500</p>
             </article>
             <article>
-                <img src="./Img/TIENDA/disco3.jpeg" alt="discos">
+                <img class="productosTienda__img" src="./Img/TIENDA/disco3.jpeg" alt="discos">
                 <hr>
                 <p>KIT DISCOS</p>
                 <P>10KG X2U, 5KG X4U, 2.5KG X4U</P>
-                <p class="precio">$5500</p>
+                <p class="productosTienda__precio">$5500</p>
             </article>
             <article>
-                <img src="./Img/TIENDA/herramientasCocina.png" alt="discos">
+                <img class="productosTienda__img" src="./Img/TIENDA/herramientasCocina.png" alt="discos">
                 <hr>
                 <p>KIT DE COCINA</p>
                 <P>Herramientas de madera color verde agua con contenedor.</P>
-                <p class="precio">$5000</p>
+                <p class="productosTienda__precio">$5000</p>
             </article>
             <article>
-                <img src="./Img/TIENDA/ollas blancas.jpg" alt="discos">
+                <img class="productosTienda__img" src="./Img/TIENDA/ollas blancas.jpg" alt="discos">
                 <hr>
                 <p>KIT DE OLLAS </p>
                 <p>4 ollas blancas antiadherentes.</p>
-                <p class="precio">$10000</p>
+                <p class="productosTienda__precio">$10000</p>
             </article>
             <article>
-                <img src="./Img/TIENDA/mancuerna1.png" alt="discos">
+                <img class="productosTienda__img" src="./Img/TIENDA/mancuerna1.png" alt="discos">
                 <hr>
                 <p>MANCUERNA</p>
                 <P>10KG X1U</P>
-                <p class="precio">$1500</p>
+                <p class="productosTienda__precio">$1500</p>
             </article>
             <article>
-                <img src="./Img/TIENDA/mancuerna2.jpeg" alt="discos">
+                <img class="productosTienda__img" src="./Img/TIENDA/mancuerna2.jpeg" alt="discos">
                 <hr>
                 <p>MANCUERNAS</p>
                 <P>10KG X2U mango rugoso.</P>
-                <p class="precio">$3000</p>
+                <p class="productosTienda__precio">$3000</p>
             </article>
             <article>
                 <img src="./Img/TIENDA/mancuerna3.jpeg" alt="discos">
                 <hr>
                 <p>KIT DE MANCUERNAS</p>
                 <P>1KG X2U, 2G X2U, 3KG X2U</P>
-                <p class="precio">$7000</p>
+                <p class="productosTienda__precio">$7000</p>
             </article>
             <article>
-                <img src="./Img/TIENDA/pcolcho3.jpeg" alt="discos">
+                <img class="productosTienda__img" src="./Img/TIENDA/pcolcho3.jpeg" alt="discos">
                 <hr>
                 <p>COLCHONETA</p>
                 <P>Reebok azul.</P>
-                <p class="precio">$2000</p>
+                <p class="productosTienda__precio">$2000</p>
             </article>
             <article>
-                <img src="./Img/TIENDA/pcolcho4.jpeg" alt="discos">
+                <img class="productosTienda__img" src="./Img/TIENDA/pcolcho4.jpeg" alt="discos">
                 <hr>
                 <p>COLCHONETA</p>
                 <P>Reebok negra lisa.</P>
-                <p class="precio">$2000</p>
+                <p class="productosTienda__precio">$2000</p>
             </article>
             <article>
-                <img src="./Img/TIENDA/pcolcho5.jpeg" alt="discos">
+                <img class="productosTienda__img" src="./Img/TIENDA/pcolcho5.jpeg" alt="discos">
                 <hr>
                 <p>COLCHONETA</p>
                 <P>Adidas bordo.</P>
-                <p class="precio">$2000</p>
+                <p class="productosTienda__precio">$2000</p>
             </article>
             <article>
-                <img src="./Img/TIENDA/pcolcho6.png" alt="discos">
+                <img class="productosTienda__img" src="./Img/TIENDA/pcolcho6.png" alt="discos">
                 <hr>
                 <p>COLCHONETA</p>
                 <P>Adidas negra.</P>
-                <p class="precio">$2000</p>
+                <p class="productosTienda__precio">$2000</p>
             </article>
-            <article>
-                <img src="./Img/TIENDA/Deportes.jpg" alt="discos">
-                <hr>
-                <p>TOP MUJER</p>
-                <P>Color negro, talle en XS/S/M/L</P>
-                <p class="precio">$2100</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/desayuno.jpg" alt="discos">
-                <hr>
-                <p>VIANDA</p>
-                <P>Desayuno de fruta + yogurt + avena.</P>
-                <p class="precio">$1500</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/ensalada.jpg" alt="discos">
-                <hr>
-                <p>VIANDA</p>
-                <P>Ensalada de 200gr de 4 ingredientes a elección.</P>
-                <p class="precio">$500</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/ensalada2.jpg" alt="discos">
-                <hr>
-                <p>VIANDA</p>
-                <P>Ensalada de 150gr de 5 ingredientes a elección.</P>
-                <p class="precio">$500</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/mancuerna4.jpeg" alt="discos">
-                <hr>
-                <p>MANCUERNA </p>
-                <p>10KG color naranja x1U.</p>
-                <p class="precio">$900</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/ensaladaFideos.jpg" alt="discos">
-                <hr>
-                <p>VIANDA</p>
-                <P>Ensalada de 250gr de fideos + 3 ingredientes a elección.</P>
-                <p class="precio">$600</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/RHblanco.jpg" alt="discos">
-                <hr>
-                <p>CAMPERA</p>
-                <P>Campera blanco talle M.</P>
-                <p class="precio">$7000</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/ensalada3.jpg" alt="discos">
-                <hr>
-                <p>VIANDA</p>
-                <P>Ensalada de 200gr de 5 ingredientes a elección.</P>
-                <p class="precio">$550</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/pcocina .jpeg" alt="discos">
-                <hr>
-                <p>COCINA</p>
-                <P>Porta especias "pata de pollo".</P>
-                <p class="precio">$1100</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/RMnegro (1).jpg" alt="discos">
-                <hr>
-                <p>CONJUNTO</p>
-                <P>Conjunto top + pantalón de mujer color NEGRO, talles S/M/XL.</P>
-                <p class="precio">$8000</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/ensalada4.jpg" alt="discos">
-                <hr>
-                <p>VIANDA</p>
-                <P>Ensalada 300gr de 5 ingredientes a elección.</P>
-                <p class="precio">$600</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/RMrojo.jpg" alt="discos">
-                <hr>
-                <p>CONJUNTO</p>
-                <P>Conjunto top + pantalón de mujer color ROJO, talles S/M/L.</P>
-                <p class="precio">$9000</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/RHgris.png" alt="discos">
-                <hr>
-                <p>CONJUNTO</p>
-                <P>Conjunto campera + pantalón de hombre color GRIS, talle M/L</P>
-                <p class="precio">$10000</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/mancuerna5.jpeg" alt="discos">
-                <hr>
-                <p>MANCUERNA</p>
-                <P> 5KG X2U</P>
-                <p class="precio">$2000</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/RHmixto.jpg" alt="discos">
-                <hr>
-                <p>CONJUNTO</p>
-                <P>Conjunto campera + pantalón color BLANCO y NEGRO, talle M</P>
-                <p class="precio">$15000</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/postre.jpg" alt="discos">
-                <hr>
-                <p>VIANDA</p>
-                <P>Copa de mousse de cholate light + gelatina + frutas.</P>
-                <p class="precio">$450</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/RHcampera.jpg" alt="discos">
-                <hr>
-                <p>CAMPERA</p>
-                <p>Campera de hombre color NEGRO.</p>
-                <p class="precio">$10000</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/RHblanco.jpg" alt="discos">
-                <hr>
-                <p>CAMPERA</p>
-                <P>Campera de hombre color BLANCO.</P>
-                <p class="precio">$1500</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/Summer Pasta Salad.jpg" alt="discos">
-                <hr>
-                <p>VIANDA</p>
-                <P>Ensalada de 200gr de fideos + 2 ingredientes a elección.</P>
-                <p class="precio">$400</p>
-            </article>
-            <article>
-                <img src="./Img/TIENDA/pesasRosas.jpg" alt="discos">
-                <hr>
-                <p>MANCUERNAS</p>
-                <P>10KG X1U, color ROSA.</P>
-                <p class="precio">$1000</p>
-            </article>
-        </div>
-    </main>
-    <!-- Inicio de footer -->
-    <footer id="footer">
-        <!-- Redes sociales de la pagina -->
-        <h2>CONTACTANOS</h2>
-        <div class="redes"> 
-            <ul class="ulRedes">
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <span> - Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/?lang=es" target="_blank">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <span> - Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <span> - Instagram</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="logoFooter">
-            <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand-footer">
-        </div>
-        <!-- Datos de contacto -->
-        <div class="contacto">
-            <p>
-                <strong>mail:</strong> example@gmail.com <br>
-                <strong>tel:</strong> 4547-3345
-            </p>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-</body>
+    </body>
 </html>
+

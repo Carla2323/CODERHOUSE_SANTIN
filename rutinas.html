@@ -1,120 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSfit-rutinas</title>
-    <link rel="stylesheet" href="./Estilos/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body class="bodyRutinas">
-    <header>
-        <!--Barra de navegación-->
-        <h1>Bienvenidos a CSfit, tu lugar saludable!</h1>
-        <div class="container">
-            <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand">
-            <nav class="menuRutinas">
-                <ul class="nav-menu-rutinas">
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="Rutinas.html">Rutinas</a>
-                    </li>
-                    <li>
-                        <a href="Recetas.html">Recetas</a>
-                    </li>
-                    <li>
-                        <a href="Tips.html">Tips</a>
-                    </li>
-                    <li>
-                        <a href="Tienda.html">Tienda</a>
-                    </li>
-                </ul>
-            </nav> 
-        </div>  
-    </header>
-    <main class="mainRutinas">
-        <!--Primera sección-->
-        <div class="gradienteRutinas">
-            <h2>NO PAIN NO GAIN</h2>
-        </div>
-        <!--Segunda sección-->
-        <div class="seccionPrincipalRutinas">
-            <div class="tonifica" data-aos="fade-up">
-                <h2>TONIFICA</h2>
-                <a href="#"></a>
-                <p>Las mejores rutinas para que hagas en tu casa o al aire libre, solo o acompañado... Entrá y mirá lo que tenemos para ofrecerte. No te lo podes perder! <strong>Empezá ahora</strong> </p>
-            </div>
-            <div class="hipertrofia" data-aos="fade-down">
-                <h2>HIPERTROFIA</h2>
-                <a href="#"></a>
-                <p>Recomedamos realizar este tipo de ejercicios bajo la supervición de un profesional, no dudes en consultarnos y alcanzá tus objetivos! <strong>Empezá ahora</strong></p>
-            </div>
-            <div class="tonifica" data-aos="fade-up">
-                <h2>TREN SUPERIOR</h2>
-                <a href="#"></a>
-                <p>Las mejores rutinas para que hagas en tu casa o al aire libre, solo o acompañado... Entrá y mirá lo que tenemos para ofrecerte. No te lo podes perder! <strong>Empezá ahora</strong> </p>
-            </div>
-            <div class="hipertrofia" data-aos="fade-down">
-                <h2>GLÚTEOS</h2>
-                <a href="#"></a>
-                <p>Recomedamos realizar este tipo de ejercicios bajo la supervición de un profesional, no dudes en consultarnos y alcanzá tus objetivos! <strong>Empezá ahora</strong></p>
-            </div>
-            <div class="tonifica" data-aos="fade-up">
-                <h2>ABDOMINALES</h2>
-                <a href="#"></a>
-                <p>Las mejores rutinas para que hagas en tu casa o al aire libre, solo o acompañado... Entrá y mirá lo que tenemos para ofrecerte. No te lo podes perder! <strong>Empezá ahora</strong> </p>
-            </div>
-            <div class="hipertrofia" data-aos="fade-down">
-                <h2>PIERNAS</h2>
-                <a href="#"></a>
-                <p>Recomedamos realizar este tipo de ejercicios bajo la supervición de un profesional, no dudes en consultarnos y alcanzá tus objetivos! <strong>Empezá ahora</strong></p>
-            </div>
-        </div>
-    </main>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Inicio de footer -->
-    <footer id="footer">
-        <!-- Redes sociales de la pagina -->
-        <h2>CONTACTANOS</h2>
-        <div class="redes"> 
-            <ul class="ulRedes">
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <span> - Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/?lang=es" target="_blank">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <span> - Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <span> - Instagram</span>
-                    </a>
-                </li>
-            </ul>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./estilos/estilos.css">
+        <!--AOS-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>CSFit</title>
+    </head>
+<body>
+    <header>
+        <h2 class="align-item-center h2Rutinas" >RUTINAS</h2>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="./Img/VARIOS/posibleLogo.jpg" alt=""></a> <!--a la img ponele class="image-fluid"-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rutinas.html">Rutinas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recetas.html">Recetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tips.html">Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr class="m-0 hr-rutinas">
+    </header>
+    <section class="content-block-1 relative overflow-hidden py-4 py-12 md:py-24">
+        <div class="container relative mx-auto p-4 py-8 pb-8 lg:py-16 flex flex-col items-center">
+            <div class="row">
+                <div class="px-4 md:pb-8 max-w-lg lg:max-w-2xl mx-auto categorias">
+                    <h2 class="text-center heading_font_family mb-3"><span class="text-5xl categorias">CATEGORÍAS</span></span></h2>
+                    <div class="md:mb-6 text-base text-center body_font_family">
+                        <p>¡Ponte fit con el catálogo más grande de rutinas en español! Elige entre más de 1,000 clases on demand para ponerte en forma mientras te diviertes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mx-auto flex flex-wrap -mx-1 overflow-hidden justify-center">
+                <div class="row">
+                    <div class="pb-card my-1 w-100 md:w-1/2 lg:w-1/3 overflow-hidden text-center p-2  col-md-6 col-xs-12" data-aos="fade-left">
+                        <a href="#" class="block relative h-full" data-entity-id="P4R91NMxpWPwGc2lYH9m9">
+                            <img class="lazy-loaded_loaded container-fluid__img" data-aos="fade-left"><img alt="" class="pb-card object-cover h-full w-full"src="https://dtsvkkjw40x57.cloudfront.net/page-builder%2FmtBKTTN6HzndjN0wymgD_1.png"></img>  
+                        </a>
+                    </div>
+
+                    <div class="pb-card my-1 w-100 md:w-1/2 lg:w-1/3 overflow-hidden text-center p-2 col-md-6 col-xs-12" data-aos="fade-right">
+                        <a href="#" class="block relative h-auto" data-entity-id="Q_3CMZvQBsv4xaCDZyEG1">
+                            <img alt="" class="pb-card object-cover h-full w-full" loading="lazy" src="https://dtsvkkjw40x57.cloudfront.net/page-builder%2FU2kSV8FrRCSISTVHYEcQ_2.png">
+                            <div class="md: text-left body_font_family max-w-xs bottom-0 left-0 px-5 py-2 mt-4 mb-8 mr-4 rounded-l-none rounded-lg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="pb-card my-1 w-100 md:w-1/2 lg:w-1/3 overflow-hidden text-center p-2 col-md-6 col-xs-12" data-aos="fade-left">
+                        <a href="#" class="block relative h-auto" data-entity-id="iktt1AE5pZaB3qIfwyCEG">
+                            <img alt="" class="pb-card object-cover h-full w-full" loading="lazy" src="https://dtsvkkjw40x57.cloudfront.net/page-builder%2F7lUDDDkRhG3CKaFlfbR1_3.png">
+                            <div class="md: text-left body_font_family max-w-xs bottom-0 left-0 px-5 py-2 mt-4 mb-8 mr-4 rounded-l-none rounded-lg"></div>
+                        </a>
+                    </div>
+
+                    <div class="pb-card my-1 w-100 md:w-1/2 lg:w-1/3 overflow-hidden text-center p-2 col-md-6 col-xs-12" data-aos="fade-right">
+                        <a href="#" class="block relative h-auto" data-entity-id="fsU_U0Sao9EvHyTLYbyt2">
+                            <img alt="" class="pb-card object-cover h-full w-full" loading="lazy" src="https://dtsvkkjw40x57.cloudfront.net/page-builder%2FLcSJdCZqTOukcqK4fmZ2_4.png">
+                            <div class="md:text-left body_font_family max-w-xs bottom-0 left-0 px-5 py-2 mt-4 mb-8 mr-4 rounded-l-none rounded-lg"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">        
+                    <div class="pb-card my-1 w-100 md:w-1/2 lg:w-1/3 overflow-hidden text-center p-2 col-md-6 col-xs-12" data-aos="fade-left">
+                        <a href="#" class="block relative h-auto" data-entity-id="fsU_U0Sao9EvHyTLYbyt2">
+                            <img alt="" class="pb-card object-cover h-full w-full" loading="lazy" src="https://dtsvkkjw40x57.cloudfront.net/page-builder%2F5oZc707XS8a5lm1yGrxg_5.png">
+                            <div class="md:text-left body_font_family max-w-xs bottom-0 left-0 px-5 py-2 mt-4 mb-8 mr-4 rounded-l-none rounded-lg"></div>
+                        </a>
+                    </div>
+
+                    <div class="pb-card my-1 w-100 md:w-1/2 lg:w-1/3 overflow-hidden text-center p-2 col-md-6 col-xs-12" data-aos="fade-right">
+                        <a href="#" class="block relative h-auto" data-entity-id="fsU_U0Sao9EvHyTLYbyt2">
+                            <img alt="" class="pb-card object-cover h-full w-full" loading="lazy" src="https://dtsvkkjw40x57.cloudfront.net/page-builder%2Fu3KPjQ6QxegN4g8UWMDn_6.png">
+                            <div class="md:text-left body_font_family max-w-xs bottom-0 left-0 px-5 py-2 mt-4 mb-8 mr-4 rounded-l-none rounded-lg"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="logoFooter">
-            <img src="./Img/VARIOS/posibleLogo.jpg" alt="Csfit LOGO" class="nav-brand-footer">
-        </div>
-        <!-- Datos de contacto -->
-        <div class="contacto">
-            <p>
-                <strong>mail:</strong> example@gmail.com <br>
-                <strong>tel:</strong> 4547-3345
-            </p>
-        </div>
-</footer>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    </section>
+    <hr class="m-0">
+    <!--Inicio del footer-->
+    <footer class="footer pt-5">
+        <div class="container-fluid">
+          <div class="row justify-content-center" >
+            <div class="col-md-4">
+              <h4>CONTACTANOS</h4>
+            </div>
+          </div>
+          <div class="row justify-content-start" >
+              <div class="col-md-4">
+                <img class="footer__logo " src="./Img/VARIOS/posibleLogo.jpg" alt="">
+                <!-- Datos de contacto -->
+                <div class="footer__contacto">
+                  <p class="footer__conoce">
+                    <strong>mail:</strong> example@gmail.com <br>
+                    <strong>tel:</strong> 4547-3345
+                  </p>
+                </div>
+              </div>
+            </div>
+      </div>
+    </footer>
+    
+    
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--LIBREERIA AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
 </body>
 </html>
