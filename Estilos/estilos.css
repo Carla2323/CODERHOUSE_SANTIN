@@ -1,3 +1,12 @@
+@charset "UTF-8";
+.btn--mail {
+  color: blue;
+}
+
+.btn--tel {
+  color: lightblue;
+}
+
 /*INDEX*/
 body {
   background-color: rgba(245, 238, 238, 0.397);
@@ -36,30 +45,50 @@ hr {
 }
 
 .hero {
-  /*EN DESUSO POR EL MOMENTO*/
-  background-image: url(../Img/VARIOS/bannerPlantas.jpg);
+  background-image: url("../Img/VARIOS/Group Fitness.jpg");
   height: 70vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: -ms-grid;
   display: grid;
-  place-items: center;
+  place-items: left;
   margin-top: 10px;
+}
+
+.hero h2 {
+  background-color: #ff5100;
+  color: white;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.hero p {
+  font-weight: 700;
+  background-color: white;
+  color: #ff5100;
+  width: 60%;
+  margin-left: 30px;
 }
 
 .carousel-inner {
   margin-top: 10px;
 }
 
-.container__serviciosPadre {
+.carousel-inner p {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.containerNosotros__serviciosPadre {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
 
-.container__serviciosHijo {
+.containerNosotros__serviciosHijo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +105,7 @@ hr {
           align-items: center;
 }
 
-.container__serviciosHijo img {
+.containerNosotros__serviciosHijo img {
   max-width: 290px;
   max-height: 290px;
 }
@@ -91,6 +120,90 @@ hr {
   color: black;
 }
 
+.containerStaff h3 {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.containerStaff__serviciosPadre {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.containerStaff__serviciosHijo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerStaff__serviciosHijo img {
+  max-width: 290px;
+  max-height: 290px;
+  border-radius: 150px;
+}
+
+.containerBeneficios {
+  padding: 5px 20px 5px 20px;
+}
+
+.containerBeneficios h2 {
+  color: #88bd0d;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.containerBeneficios .titulo {
+  color: #88bd0d;
+  font-weight: 400;
+}
+
+.hero-banner-img {
+  height: 250px;
+  position: static;
+}
+
+.suplementos {
+  background-color: #88bd0d;
+  margin: 0 0 20px 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.suplementos h2 {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+
+.suplementos p {
+  color: white;
+}
+
+.suplementos a {
+  background-color: white;
+  padding: 10px;
+}
+
+.suplementos a:hover {
+  cursor: pointer;
+  color: black;
+  -webkit-text-decoration: underline black solid 1px;
+          text-decoration: underline black solid 1px;
+}
+
 .logo {
   max-width: 80px;
   border: black solid 2px;
@@ -102,13 +215,13 @@ hr {
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 992px) {
-  .container__serviciosPadre {
+  .containerNosotros__serviciosPadre {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .container__serviciosHijo {
+  .containerNosotros__serviciosHijo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -124,9 +237,41 @@ hr {
         -ms-flex-align: center;
             align-items: center;
   }
-  .container__serviciosHijo img {
+  .containerNosotros__serviciosHijo img {
     max-width: 290px;
     max-height: 290px;
+  }
+  .containerStaff__serviciosPadre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .containerStaff__serviciosHijo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px 0;
+  }
+  .containerStaff__serviciosHijo img {
+    max-width: 290px;
+    max-height: 290px;
+    border-radius: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-banner-img {
+    height: 100%;
+    position: absolute;
   }
 }
 
@@ -202,9 +347,114 @@ p {
   color: #00f8b6ff;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/*sección 2*/
+.containerRutinas {
+  background-color: black;
+}
+
+.containerRutinas h2 {
+  color: black;
+}
+
+.containerRutinas__titulo {
+  font-size: 60px;
+}
+
+.containerRutinas__serviciosPadre {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.containerRutinas__serviciosHijo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.containerRutinas__serviciosHijo h6 {
+  color: white;
+  font-weight: 750;
+}
+
+.containerRutinas__serviciosHijo img {
+  max-width: 290px;
+  max-height: 290px;
+}
+
+.containerRutinas__serviciosHijo img:hover {
+  cursor: pointer;
+}
+
+.containerRutinas__serviciosHijo:hover {
+  cursor: pointer;
+  -webkit-text-decoration: underline solid white 2px;
+          text-decoration: underline solid white 2px;
+}
+
 @media screen and (min-width: 1280px) {
   .content-block-1 .pb-card {
     height: 26rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .containerRutinas {
+    background-color: black;
+  }
+  .containerRutinas__titulo {
+    font-size: 60px;
+  }
+  .containerRutinas__serviciosPadre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .containerRutinas__serviciosHijo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .containerRutinas__serviciosHijo h6 {
+    color: white;
+    font-weight: 750;
+  }
+  .containerRutinas__serviciosHijo img {
+    max-width: 290px;
+    max-height: 290px;
+  }
+  .containerRutinas__serviciosHijo img:hover {
+    cursor: pointer;
   }
 }
 
@@ -576,6 +826,7 @@ p {
   color: black;
   font-size: 25px;
   font-weight: 50;
+  float: right;
 }
 
 .footer h4 {
@@ -603,6 +854,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 20vh;
+  float: left;
 }
 
 .btn {
@@ -664,3 +916,4 @@ a {
 small {
   color: lightgray;
 }
+/*# sourceMappingURL=estilos.css.map */
