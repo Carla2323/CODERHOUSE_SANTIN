@@ -1,10 +1,10 @@
 @import "./partials/variables";
 @import "./partials/fuentes";
-@each $name-color, $bgcolor in $colors {
-    .btn--#{$name-color}{
-        color: $bgcolor;
+@each $nombre-foto in friends, bannerRecetas, rosa{
+    .#{$nombre-foto}-each{
+        background-image: url("../Img/VARIOS/#{$nombre-foto}.png");
     }
-}
+} //lo intente y no me salio.
 
 /*INDEX*/
 
@@ -45,7 +45,7 @@ hr {
 }
 
 .hero { 
-    background-image: url("../Img/VARIOS/Group\ Fitness.jpg");
+    background-image: url("../Img/VARIOS/friends.jpg");
     height: 70vh;
     background-position: center;
     background-size: cover;
@@ -129,6 +129,7 @@ hr {
 
 .containerBeneficios{
     padding: 5px 20px 5px 20px;
+    margin-top: 30px;
     h2{
         color: $color-principal;
         font-weight: 700;
@@ -485,7 +486,6 @@ p {
         }
     }
 
-
     .Recetas{
         display: grid;
         grid-template-columns: 1fr;
@@ -544,105 +544,97 @@ p {
     }
 }
 
-
-
-.tips {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3 1fr);
-    column-gap: 50px;
-    row-gap: 20px;
-    height: 60%;
-    width: 40%;
-    margin: 40px auto 20px auto;
-    align-items: center;
-    color: $color-texto-secundario !important;
-    &__article{
+.containerTips{
+    &__serviciosPadre{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    &__serviciosHijo{
         display: flex;
-        margin: auto;
-        justify-items: center;
+        flex-direction: column;
+        grid-gap: 1rem;
+        justify-content: space-between;
         align-items: center;
-        background-color: #780dc0bd;
-        border-radius: 15px;
-        height: 100%;
-        width: 100%;
-        font-size: $letra*2;
-        text-align: center;
-        transition: all 2s;
+            img{
+                max-width: 290px;
+                max-height: 290px;
+            }
+        margin: 10px;
     }
-    article:hover{
-        height: 70%;
-        width: 100%;
-        padding: 20px;
-        background-color: #bd22d1e0;
-    }
-    strong:hover{
-        text-decoration: underline $color-texto-secundario;
-        cursor: pointer;
-    }
-    p{
-        color: $color-texto-secundario;
+}
+
+
+//MEDIA QUERIES
+@media screen and (max-width: 600px){
+    .containerTips{
+        &__serviciosPadre{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        &__serviciosHijo{
+            display: flex;
+            flex-direction: column;
+            grid-gap: 1rem;
+            justify-content: space-between;
+            align-items: center;
+                img{
+                    max-width: 290px;
+                    max-height: 290px;
+                }
+        }
     }
 }
 
 /*TIENDA*/
 
-.navegacion {
-    background-color: rgba(223, 6, 6, 0.205);
-    border: inset rgba(238, 73, 73, 0.397) 2px;
-    border-radius: 2px;
-    position: relative;
-    width: auto;
-    height: 80px;
-    text-align: center;
+.bannerTienda { 
+    background-image: url("../Img/VARIOS/rosa.png");
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
     margin-top: 10px;
-    ul{
-        list-style: none;
+    h2{
+        color: rgb(251, 255, 0);;
+        margin-left: 30px;
+        margin-top: 30px;
+        font-size: 50px;
+    }
+    p{
+        font-weight: 700;
+        background-color: white;
+        color: rgb(251, 255, 0);
+        width: 60%;
+        margin-left: 30px;
+    }
+}
+
+.containerTienda{
+    margin-top: 40px;
+    &__serviciosPadre{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__serviciosHijo{
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        grid-gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+            img{
+                max-width: 290px;
+                max-height: 290px;
+            }
     }
-    li, a{
-        padding: 10px;
-        font-size: ($letra*2)-5;
-        text-decoration: none;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: black;
-        word-spacing: 2px;
+    &__serviciosHijo:hover{
         cursor: pointer;
-        color: rgb(5, 71, 8);
-    }
-    li:hover {
-        text-decoration: underline black 2px;
-    }
-    a:hover {
-        text-decoration: underline black 2px;
     }
 }
 
-.categoriasDesplegable {
-    display: none;
-    position: absolute;
-    background-color: #fafcf985;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.377);
-    z-index: 1;
-    border-radius: 10px;
-    a{
-        color: rgb(7, 49, 97);
-        margin-top: 10px;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    a:hover{
-        border-radius: 10px;
-    }
-}
-.cajaCategorias:hover .categoriasDesplegable {
-    display: block;
-}
-
-.productosTienda {
+.productosTienda { //en desuso por el momento.
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3 1fr);

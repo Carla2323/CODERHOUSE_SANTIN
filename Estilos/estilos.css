@@ -1,10 +1,14 @@
 @charset "UTF-8";
-.btn--mail {
-  color: blue;
+.friends-each {
+  background-image: url("../Img/VARIOS/friends.png");
 }
 
-.btn--tel {
-  color: lightblue;
+.bannerRecetas-each {
+  background-image: url("../Img/VARIOS/bannerRecetas.png");
+}
+
+.rosa-each {
+  background-image: url("../Img/VARIOS/rosa.png");
 }
 
 /*INDEX*/
@@ -45,7 +49,7 @@ hr {
 }
 
 .hero {
-  background-image: url("../Img/VARIOS/Group Fitness.jpg");
+  background-image: url("../Img/VARIOS/friends.jpg");
   height: 70vh;
   background-position: center;
   background-size: cover;
@@ -157,6 +161,7 @@ hr {
 
 .containerBeneficios {
   padding: 5px 20px 5px 20px;
+  margin-top: 30px;
 }
 
 .containerBeneficios h2 {
@@ -653,129 +658,130 @@ p {
   color: #25013d;
 }
 
-.tips {
+.containerTips__serviciosPadre {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3 1fr);
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
-  row-gap: 20px;
-  height: 60%;
-  width: 40%;
-  margin: 40px auto 20px auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: black !important;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
-.tips__article {
+.containerTips__serviciosHijo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
-  justify-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #780dc0bd;
-  border-radius: 15px;
-  height: 100%;
-  width: 100%;
-  font-size: 20px;
-  text-align: center;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  margin: 10px;
 }
 
-.tips article:hover {
-  height: 70%;
-  width: 100%;
-  padding: 20px;
-  background-color: #bd22d1e0;
+.containerTips__serviciosHijo img {
+  max-width: 290px;
+  max-height: 290px;
 }
 
-.tips strong:hover {
-  -webkit-text-decoration: underline black;
-          text-decoration: underline black;
-  cursor: pointer;
-}
-
-.tips p {
-  color: black;
+@media screen and (max-width: 600px) {
+  .containerTips__serviciosPadre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .containerTips__serviciosHijo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .containerTips__serviciosHijo img {
+    max-width: 290px;
+    max-height: 290px;
+  }
 }
 
 /*TIENDA*/
-.navegacion {
-  background-color: rgba(223, 6, 6, 0.205);
-  border: inset rgba(238, 73, 73, 0.397) 2px;
-  border-radius: 2px;
-  position: relative;
-  width: auto;
-  height: 80px;
-  text-align: center;
+.bannerTienda {
+  background-image: url("../Img/VARIOS/rosa.png");
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   margin-top: 10px;
 }
 
-.navegacion ul {
-  list-style: none;
+.bannerTienda h2 {
+  color: #fbff00;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+.bannerTienda p {
+  font-weight: 700;
+  background-color: white;
+  color: #fbff00;
+  width: 60%;
+  margin-left: 30px;
+}
+
+.containerTienda {
+  margin-top: 40px;
+}
+
+.containerTienda__serviciosPadre {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.containerTienda__serviciosHijo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navegacion li, .navegacion a {
-  padding: 10px;
-  font-size: 15px;
-  text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
-  word-spacing: 2px;
+.containerTienda__serviciosHijo img {
+  max-width: 290px;
+  max-height: 290px;
+}
+
+.containerTienda__serviciosHijo:hover {
   cursor: pointer;
-  color: #054708;
-}
-
-.navegacion li:hover {
-  -webkit-text-decoration: underline black 2px;
-          text-decoration: underline black 2px;
-}
-
-.navegacion a:hover {
-  -webkit-text-decoration: underline black 2px;
-          text-decoration: underline black 2px;
-}
-
-.categoriasDesplegable {
-  display: none;
-  position: absolute;
-  background-color: #fafcf985;
-  min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.377);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.377);
-  z-index: 1;
-  border-radius: 10px;
-}
-
-.categoriasDesplegable a {
-  color: #073161;
-  margin-top: 10px;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.categoriasDesplegable a:hover {
-  border-radius: 10px;
-}
-
-.cajaCategorias:hover .categoriasDesplegable {
-  display: block;
 }
 
 .productosTienda {
