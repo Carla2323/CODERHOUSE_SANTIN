@@ -1,4 +1,207 @@
 @charset "UTF-8";
+@media screen and (max-width: 992px) {
+  .containerNosotros__serviciosPadre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .containerNosotros__serviciosHijo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .containerNosotros__serviciosHijo img {
+    max-width: 290px;
+    max-height: 290px;
+  }
+  .containerStaff__serviciosPadre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .containerStaff__serviciosHijo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px 0;
+  }
+  .containerStaff__serviciosHijo img {
+    max-width: 290px;
+    max-height: 290px;
+    border-radius: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-banner-img {
+    height: 100%;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .content-block-1 .pb-card {
+    height: 26rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .containerRutinas {
+    background-color: black;
+  }
+  .containerRutinas__titulo {
+    font-size: 60px;
+  }
+  .containerRutinas__serviciosPadre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .containerRutinas__serviciosHijo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .containerRutinas__serviciosHijo h6 {
+    color: white;
+    font-weight: 750;
+  }
+  .containerRutinas__serviciosHijo img {
+    max-width: 290px;
+    max-height: 290px;
+  }
+  .containerRutinas__serviciosHijo img:hover {
+    cursor: pointer;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .containerRecetas__serviciosPadre-recetas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .containerRecetas__serviciosHijo-recetas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .containerRecetas__serviciosHijo-recetas img {
+    max-width: 290px;
+    max-height: 290px;
+  }
+  .Recetas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    background-color: #25013d;
+  }
+  .Recetas article {
+    height: 100px;
+    background-color: #88bd0d;
+    margin-bottom: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Recetas p {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Recetas__articuloIzq {
+    text-align: center;
+  }
+  .Recetas__articuloIzq img {
+    padding-right: 30px;
+    margin-left: 2%;
+  }
+  .Recetas__articuloDer {
+    text-align: center;
+  }
+  .Recetas__articuloDer img {
+    float: right;
+    padding-left: 30px;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .containerTips__serviciosPadre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .containerTips__serviciosHijo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .containerTips__serviciosHijo img {
+    max-width: 290px;
+    max-height: 290px;
+  }
+}
+
 .friends-each {
   background-image: url("../Img/VARIOS/friends.png");
 }
@@ -218,68 +421,6 @@ hr {
   margin-left: 1rem;
 }
 
-/*MEDIA QUERIES*/
-@media screen and (max-width: 992px) {
-  .containerNosotros__serviciosPadre {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .containerNosotros__serviciosHijo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    grid-gap: 1rem;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .containerNosotros__serviciosHijo img {
-    max-width: 290px;
-    max-height: 290px;
-  }
-  .containerStaff__serviciosPadre {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .containerStaff__serviciosHijo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    grid-gap: 1rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 20px 0;
-  }
-  .containerStaff__serviciosHijo img {
-    max-width: 290px;
-    max-height: 290px;
-    border-radius: 150px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero-banner-img {
-    height: 100%;
-    position: absolute;
-  }
-}
-
 /*RUTINAS*/
 .h2Rutinas {
   color: #6cdabe;
@@ -414,55 +555,6 @@ p {
           text-decoration: underline solid white 2px;
 }
 
-@media screen and (min-width: 1280px) {
-  .content-block-1 .pb-card {
-    height: 26rem;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .containerRutinas {
-    background-color: black;
-  }
-  .containerRutinas__titulo {
-    font-size: 60px;
-  }
-  .containerRutinas__serviciosPadre {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .containerRutinas__serviciosHijo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    grid-gap: 1rem;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 20px;
-  }
-  .containerRutinas__serviciosHijo h6 {
-    color: white;
-    font-weight: 750;
-  }
-  .containerRutinas__serviciosHijo img {
-    max-width: 290px;
-    max-height: 290px;
-  }
-  .containerRutinas__serviciosHijo img:hover {
-    cursor: pointer;
-  }
-}
-
 /*RECETAS*/
 .bannerRecetas {
   background-image: url(../Img/RECETAS/bannerRecetas.jpg);
@@ -563,71 +655,6 @@ p {
   margin-right: 2%;
 }
 
-/*MEDIA QUIERIES*/
-@media all and (max-width: 992px) {
-  .containerRecetas__serviciosPadre-recetas {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .containerRecetas__serviciosHijo-recetas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    grid-gap: 1rem;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .containerRecetas__serviciosHijo-recetas img {
-    max-width: 290px;
-    max-height: 290px;
-  }
-  .Recetas {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    background-color: #25013d;
-  }
-  .Recetas article {
-    height: 100px;
-    background-color: #88bd0d;
-    margin-bottom: 100px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .Recetas p {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .Recetas__articuloIzq {
-    text-align: center;
-  }
-  .Recetas__articuloIzq img {
-    padding-right: 30px;
-    margin-left: 2%;
-  }
-  .Recetas__articuloDer {
-    text-align: center;
-  }
-  .Recetas__articuloDer img {
-    float: right;
-    padding-left: 30px;
-    margin-right: 2%;
-  }
-}
-
 /*TIPS*/
 .scroll-container {
   display: block;
@@ -688,35 +715,6 @@ p {
 .containerTips__serviciosHijo img {
   max-width: 290px;
   max-height: 290px;
-}
-
-@media screen and (max-width: 600px) {
-  .containerTips__serviciosPadre {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .containerTips__serviciosHijo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    grid-gap: 1rem;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .containerTips__serviciosHijo img {
-    max-width: 290px;
-    max-height: 290px;
-  }
 }
 
 /*TIENDA*/
