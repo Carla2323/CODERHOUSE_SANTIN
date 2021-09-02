@@ -252,7 +252,7 @@ hr {
 }
 
 .hero {
-  background-image: url("../Img/VARIOS/friends.jpg");
+  background-image: url("../Img/varios/friends.jpg");
   height: 70vh;
   background-position: center;
   background-size: cover;
@@ -288,32 +288,8 @@ hr {
   font-weight: 500;
 }
 
-.containerNosotros__serviciosPadre {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-.containerNosotros__serviciosHijo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.containerNosotros__serviciosHijo img {
-  max-width: 290px;
+.container__servicios img {
+  max-width: 290x;
   max-height: 290px;
 }
 
@@ -327,36 +303,7 @@ hr {
   color: black;
 }
 
-.containerStaff h3 {
-  margin-left: 30px;
-  margin-bottom: 20px;
-}
-
-.containerStaff__serviciosPadre {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-}
-
-.containerStaff__serviciosHijo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.containerStaff__serviciosHijo img {
+.container__staff img {
   max-width: 290px;
   max-height: 290px;
   border-radius: 150px;
@@ -510,46 +457,22 @@ p {
   font-size: 60px;
 }
 
-.containerRutinas__serviciosPadre {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-}
-
-.containerRutinas__serviciosHijo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-}
-
-.containerRutinas__serviciosHijo h6 {
+.containerRutinas__servicios h6 {
   color: white;
   font-weight: 750;
+  margin-top: 10px;
 }
 
-.containerRutinas__serviciosHijo img {
+.containerRutinas__servicios img {
   max-width: 290px;
   max-height: 290px;
 }
 
-.containerRutinas__serviciosHijo img:hover {
+.containerRutinas__servicios img:hover {
   cursor: pointer;
 }
 
-.containerRutinas__serviciosHijo:hover {
+.containerRutinas__servicios:hover {
   cursor: pointer;
   -webkit-text-decoration: underline solid white 2px;
           text-decoration: underline solid white 2px;
@@ -718,8 +641,17 @@ p {
 }
 
 /*TIENDA*/
+.hr-tienda {
+  background: #f953c6;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#b91d73), to(#f953c6));
+  background: linear-gradient(to right, #b91d73, #f953c6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .bannerTienda {
-  background-image: url("../Img/VARIOS/rosa.png");
+  background-image: url("../Img/varios/rosa.png");
   height: 70vh;
   background-position: center;
   background-size: cover;

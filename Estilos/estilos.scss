@@ -7,6 +7,7 @@
     }
 } //lo intente y no me salio.
 
+
 /*INDEX*/
 
 body{
@@ -46,7 +47,7 @@ hr {
 }
 
 .hero { 
-    background-image: url("../Img/VARIOS/friends.jpg");
+    background-image: url("../Img/varios/friends.jpg");
     height: 70vh;
     background-position: center;
     background-size: cover;
@@ -78,21 +79,12 @@ hr {
     }
 }
 
-.containerNosotros{
-    &__serviciosPadre{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    &__serviciosHijo{
-        display: flex;
-        flex-direction: column;
-        grid-gap: 1rem;
-        justify-content: space-between;
-        align-items: center;
-            img{
-                max-width: 290px;
-                max-height: 290px;
-            }
+.container{
+    &__servicios{
+        img{
+            max-width: 290x;
+            max-height: 290px;
+        }
     }
 }
 
@@ -105,26 +97,14 @@ hr {
     }
 }
 
-.containerStaff{
-    h3{
-        margin-left: 30px;
-        margin-bottom: 20px;
-    }
-    &__serviciosPadre{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    &__serviciosHijo{
-        display: flex;
-        flex-direction: column;
-        grid-gap: 1rem;
-        justify-content: space-between;
-        align-items: center;
-            img{
-                max-width: 290px;
-                max-height: 290px;
-                border-radius: 150px;
-            }
+
+.container{
+    &__staff{
+        img{
+            max-width: 290px;
+            max-height: 290px;
+            border-radius: 150px;
+        }
     }
 }
 
@@ -253,9 +233,6 @@ p {
 .overflow-hidden {
     overflow: hidden;
 } 
-.programasGratuitos {
-    
-}
 
 /*sección 2*/
 
@@ -267,20 +244,11 @@ p {
     &__titulo{
         font-size: 60px;
     }
-    &__serviciosPadre{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    &__serviciosHijo{
-        display: flex;
-        flex-direction: column;
-        grid-gap: 1rem;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
+    &__servicios{
         h6{
             color: white;
             font-weight: 750;
+            margin-top: 10px;
         }
         img{
             max-width: 290px;
@@ -290,7 +258,7 @@ p {
             cursor: pointer;        
         }
     }
-    &__serviciosHijo:hover{
+    &__servicios:hover{
         cursor: pointer;
         text-decoration: underline solid white 2px;
     }
@@ -425,8 +393,14 @@ p {
 
 /*TIENDA*/
 
+.hr-tienda {
+    background: #f953c6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
 .bannerTienda { 
-    background-image: url("../Img/VARIOS/rosa.png");
+    background-image: url("../Img/varios/rosa.png");
     height: 70vh;
     background-position: center;
     background-size: cover;
