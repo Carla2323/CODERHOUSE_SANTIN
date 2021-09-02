@@ -141,7 +141,6 @@
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    background-color: #25013d;
   }
   .Recetas article {
     height: 100px;
@@ -369,6 +368,16 @@ hr {
 }
 
 /*RUTINAS*/
+.nav-link-rutinas {
+  font-size: 20px;
+}
+
+.nav-link-rutinas:hover {
+  color: #30e4b4 !important;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .h2Rutinas {
   color: #6cdabe;
   font-size: 57px;
@@ -479,6 +488,16 @@ p {
 }
 
 /*RECETAS*/
+.nav-link-recetas {
+  font-size: 20px;
+}
+
+.nav-link-recetas:hover {
+  color: #2d706d !important;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .bannerRecetas {
   background-image: url(../Img/RECETAS/bannerRecetas.jpg);
   padding: 2% 0;
@@ -496,42 +515,25 @@ p {
   padding-bottom: 40px;
 }
 
-.containerRecetas__serviciosPadre-recetas {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-.containerRecetas__serviciosHijo-recetas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .containerRecetas__serviciosHijo-recetas img {
-  max-width: 290px;
-  max-height: 290px;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .Recetas {
   width: 88%;
   padding: 1px;
-  display: inline;
 }
 
-.Recetas article {
+.Recetas__articuloIzq {
+  height: 300px;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  color: #118d8d;
+  margin-bottom: 110px;
+}
+
+.Recetas__articuloDer {
   height: 300px;
   font-size: 20px;
   font-family: 'Oswald', sans-serif;
@@ -556,56 +558,24 @@ p {
   cursor: pointer;
 }
 
-.Recetas__articuloIzq {
-  text-align: left;
-  margin-right: 20%;
-}
-
-.Recetas__articuloIzq img {
-  float: left;
-  padding-right: 30px;
-  margin-left: 2%;
-}
-
-.Recetas__articuloDer {
-  text-align: right;
-  margin-left: 20%;
-}
-
-.Recetas__articuloDer img {
-  float: right;
-  padding-left: 30px;
-  margin-right: 2%;
-}
-
 /*TIPS*/
-.scroll-container {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  width: 50%;
-  height: 200px;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  background-color: #0000000e;
-  margin-top: 20px;
+.hr-tips {
+  background: #ED213A;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#93291E), to(#ED213A));
+  background: linear-gradient(to right, #93291E, #ED213A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.scroll-container__article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 40%;
-  font-size: 23px;
-  margin-bottom: 60px;
-  margin-top: 50px;
-  color: #25013d;
+.nav-link-tips {
+  font-size: 20px;
+}
+
+.nav-link-tips:hover {
+  color: #c9162e !important;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .containerTips__serviciosPadre {
@@ -641,6 +611,16 @@ p {
 }
 
 /*TIENDA*/
+.nav-link-tienda {
+  font-size: 20px;
+}
+
+.nav-link-tienda:hover {
+  color: #f953c6 !important;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .hr-tienda {
   background: #f953c6;
   /* fallback for old browsers */
@@ -852,3 +832,4 @@ a {
 small {
   color: lightgray;
 }
+/*# sourceMappingURL=estilos.css.map */

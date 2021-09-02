@@ -24,19 +24,19 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link-recetas nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="rutinas.html">Rutinas</a>
+                <a class="nav-link-recetas nav-link" href="rutinas.html">Rutinas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="recetas.html">Recetas</a>
+                <a class="nav-link-recetas nav-link" href="recetas.html">Recetas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="tips.html">Tips</a>
+                <a class="nav-link-recetas nav-link" href="tips.html">Tips</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="tienda.html">Tienda</a>
+                <a class="nav-link-recetas nav-link" href="tienda.html">Tienda</a>
               </li>
             </ul>
           </div>
@@ -45,35 +45,69 @@
       <hr class="m-0 hr-index">
 </header>
     <main id="recetas">
-      <!--Primera sección-->
+      <!--Primera sección // "banner"-->
       <div class="bannerRecetas each">
           <h2 class="bannerRecetas__titulo">La mejor perspectiva para tu salud</h2>
       </div>
-      <section class="servicios mt-5">
+      <!--Segunda sección // "podrás encontrar"-->
+
+      <section class="serviciosR mt-5">
         <div class="containerRecetas">
-            <h2 class="text-center text-center-h2-recetas">PODRÁS ENCONTRAR...</h2>
-            <div class="containerRecetas__serviciosPadre-recetas text-center">
-                <div class="containerRecetas__serviciosHijo-recetas">
-                    <h3>Recetas proteicas</h3>
-                    <img class="img-fluid" src="Img/recetas/chicken_41518.png">
-                    <p>Las mejores formas d ecomer carne!</p>
-                </div>
-                <div class="containerRecetas__serviciosHijo-recetas">
-                    <h3>Dulce</h3>
-                    <img class="img-fluid" src="#" alt="foto algo dulce">
-                    <p>No le tengas miedo a lo dulce, date un permitido! Apto celiacos</p>
-                </div>
-                <div class="containerRecetas__serviciosHijo-recetas">
-                    <h3>Apto vegan</h3>
-                    <img class="img-fluid" src="#" alt="foto ensalada">
-                    <p>Las formas más ricas de comer verduras!</p>
-                </div>
+          <h2 class="text-center">PODRÁS ENCONTRAR...</h2>
+          <div class="row containerRecetas__serviciosPadre-recetas">
+            <div class="col-md-4 containerRecetas__serviciosHijo-recetas text-center">
+              <h3>RECETAS PROTEICAS</h3>
+              <img class="img-fluid" src="img/recetas/carnes.jfif" alt="foto proteinas">
             </div>
+            <div class="col-md-4 containerRecetas__serviciosHijo-recetas text-center">
+              <h3>DULCE</h3>
+              <img class="img-fluid" src="img/recetas/dulce.jpg" alt="foto dulce">
+            </div>
+            <div class="col-md-4 containerRecetas__serviciosHijo-recetas text-center">
+              <h3>APTO VEGAN</h3>
+              <img class="img-fluid" src="img/recetas/vegaan.jpg" alt="foto apto vegan">
+            </div>
+          </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="rgb(17, 141, 141)" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,101.3C384,117,480,171,576,208C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-          </svg>
-    </section>
+          <path fill="rgb(17, 141, 141)" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,101.3C384,117,480,171,576,208C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </section>
+      <!--Tercera sección // "recetas"-->
+      <section class="Recetas">
+        <div class="row">
+          <div class="col-md-6 Recetas__articuloIzq" data-aos="fade-right">
+            <img src="img/recetas/proteinas.jpg" alt="carnes">
+            <h3>PROTEICAS</h3>
+            <p>Nada mejor para una alimentación saludable y un buen desarrollo de los músculos incluir proteinas en nuestros platos. Si te aburris de comer carne siempre de la misma forma, no te gusta el pescado o no sabes que hacer con el pollo que sobró, en este articulo tenemos mas de 100 recetas para que puedas probar cosas distintas, optimizar tiempos, no desperdiciar nada y disfrutar comiendo saludable. No es dieta, son hábitos!</p>
+          </div>
+          <div class="col-md-6 Recetas__articuloDer" data-aos="fade-left">
+            <img src="img/recetas/pocosIngredientes.jpg" alt="pocos ingrdientes">
+            <h3>POCOS INGREDIENTES</h3>
+            <p>Si sos de esas personas que no se llevan bien con la cocina, te brindamos muchas recetas con no mas de 5 ingredientes y muy fáciles de hacer, para que te salven en esos dias que te llama el delivery. Podes freezar cualquiera de estos platos y guardarlos para organizarte mejor en la semana, que solemos tener menos tiempo para cocinar. No es dieta, son hábitos!</p>
+          </div>
+          <div class="col-md-6 Recetas__articuloIzq" data-aos="fade-right">
+            <img src="img/recetas/rapido.jpg" alt="recetas express">
+            <h3>DESAYUNOS EXPRESS</h3>
+            <p>Si a la mañana preferis invertir tu tiempo en otras cosas y no queres gastarlo en hacerte un desayuno, te proponemos que entres a mirar los desayunos express que tenemos porque son una bomba y no toman más de 5 minutos en hacerse, además tendrás energías para afrontar todo tu dia de la mejor manera. Dale a tu cuerpo la comida más importante del día y rendí mejor que nadie. No es dieta, son hábitos!</p>
+          </div>
+          <div class="col-md-6 Recetas__articuloDer" data-aos="fade-left">
+            <img src="Img/recetas/aptoCeliaco.png" alt="recetas apto celiacos">
+            <h3>APTO CELÍACOS</h3>
+            <p>Si no podes o simplemente a veces preferis no comer con gluten, no podes dejar de mirar nuestras recetas (dulces y saladas) que tenemos, super variadas, fáciles y económicas. ¿Qué esperas para probar? No es dieta, son hábitos!</p>
+          </div>
+          <div class="col-md-6 Recetas__articuloIzq" data-aos="fade-right">
+            <img src="img/recetas/vegano.jpg" alt="para veganos">
+            <h3>APTO VEGAN</h3>
+            <p>Una dieta vegana elimina todo el co­lesterol y casi todas las grasas saturadas, y reduce la cantidad total de grasas poliinsa­turadas para mantener una salud óptima y evitar las enfermedades cardiovasculares. Si estás entrando en el mundo del veganismo, te ayudaremos con las recetas básicas para que puedas tener tus comidas organizadas y completas. No es dieta, son hábitos!</p>
+          </div>
+          <div class="col-md-6 Recetas__articuloDer" data-aos="fade-left">
+            <img src="img/recetas/vegetariano.jpg" alt="para vegetarianos">
+            <h3>VEGETARIANAS</h3>
+            <p>Si todavia no te animas a probar este estilo de vida, este es el momento! Te dejamos distintas recetas completas con los nutrientes necesarios para que comiences una alimentación saludable sin consumo de carne. No es dieta, son hábitos! </p>
+          </div>
+        </div>
+      </section>
       <div class="Recetas">
           <article class="Recetas__articuloIzq" data-aos="fade-right">
               <img src="./Img/recetas/proteinas.jpg" alt="Imagen del primer articulo">

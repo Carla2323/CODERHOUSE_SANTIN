@@ -163,6 +163,16 @@ hr {
 
 /*RUTINAS*/
 
+.nav-link-rutinas {
+  font-size: $letra*2;
+}
+
+.nav-link-rutinas:hover {
+  color: $color-secundario !important;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .h2Rutinas {
     color: $color-rutinas;
     font-size: ($letra*5)+7;
@@ -227,7 +237,7 @@ p {
 
   .pb-card {
     background-color: rgba(0,0,0,0); 
-    color: #00f8b6ff
+    color: #00f8b6ff;
   }
 
 .overflow-hidden {
@@ -266,6 +276,16 @@ p {
 
 /*RECETAS*/
 
+.nav-link-recetas {
+  font-size: $letra*2;
+}
+
+.nav-link-recetas:hover {
+  color: rgb(45, 112, 109)!important;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .bannerRecetas {
     background-image: url(../Img/RECETAS/bannerRecetas.jpg);
     padding: 2% 0;
@@ -284,34 +304,30 @@ p {
 }
 
 .containerRecetas{
-    &__serviciosPadre-recetas{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
     &__serviciosHijo-recetas{
-        display: flex;
-        flex-direction: column;
-        grid-gap: 1rem;
-        justify-content: space-between;
-        align-items: center;
             img{
-                max-width: 290px;
-                max-height: 290px;
+                max-width: 200px;
+                max-height: 200px;
             }
     }
 }
- 
 
 .Recetas {
     width: 88%;
     padding: 1px;
-    display: inline;
-    article {
+    &__articuloIzq {
         height: 300px;
         font-size: $letra*2;
         font-family: 'Oswald', sans-serif;
         color: rgb(17, 141, 141);
         margin-bottom: 110px;
+    }
+    &__articuloDer{
+      height: 300px;
+      font-size: $letra*2;
+      font-family: 'Oswald', sans-serif;
+      color: rgb(17, 141, 141);
+      margin-bottom: 110px;
     }
     p{
         text-align: justify;
@@ -326,49 +342,25 @@ p {
         text-decoration: underline rgb(17, 141, 141) 2px;
         cursor: pointer;
     }
-    &__articuloIzq {
-        text-align: left;
-        margin-right: 20%;
-        img{
-            float: left;
-            padding-right: 30px;
-            margin-left: 2%;
-        }
-    }
-    
-    &__articuloDer {
-        text-align: right;
-        margin-left: 20%;
-        img{
-            float: right;
-            padding-left: 30px;
-            margin-right: 2%;
-        }
-    }
 }
 
 /*TIPS*/
 
-.scroll-container {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    width: 50%;
-    height: 200px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    background-color: #0000000e;
-    margin-top: 20px;
-    &__article{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 40%;
-        font-size: ($letra*2)+3;
-        margin-bottom: 60px;
-        margin-top: 50px;
-        color: #25013d;
-    }
+.hr-tips{
+background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}  
+
+.nav-link-tips {
+  font-size: $letra*2;
+}
+
+.nav-link-tips:hover {
+  color: $color-tips !important;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .containerTips{
@@ -393,10 +385,20 @@ p {
 
 /*TIENDA*/
 
+.nav-link-tienda {
+  font-size: $letra*2;
+}
+
+.nav-link-tienda:hover {
+  color: $color-tienda !important;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .hr-tienda {
-    background: #f953c6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: $color-tienda;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b91d73, $color-tienda);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b91d73, $color-tienda); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
 .bannerTienda { 
