@@ -173,12 +173,6 @@ hr {
   text-decoration: underline;
 }
 
-.h2Rutinas {
-    color: $color-rutinas;
-    font-size: ($letra*5)+7;
-    text-align: center;
-}
-
 .hr-rutinas {
     background: #348F50;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #7ecae4, #90d3a4);  /* Chrome 10-25, Safari 5.1-6 */
@@ -363,6 +357,16 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
   text-decoration: underline;
 }
 
+.btn-primary{
+  margin-top: 10px;
+  background-color: black !important;
+  border: black !important;
+}
+
+.artIntro{
+  margin-top: 10px;
+}
+
 .containerTips{
     &__serviciosPadre{
         display: grid;
@@ -401,49 +405,55 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
     background: linear-gradient(to right, #b91d73, $color-tienda); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
-.bannerTienda { 
-    background-image: url("../Img/varios/rosa.png");
-    height: 70vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: grid;
-    place-items: center;
-    margin-top: 10px;
-    h2{
-        color: rgb(251, 255, 0);;
-        margin-left: 30px;
-        margin-top: 30px;
-        font-size: 50px;
-    }
-    p{
-        font-weight: 700;
-        background-color: white;
-        color: rgb(251, 255, 0);
-        width: 60%;
-        margin-left: 30px;
-    }
+.bannerTienda1 {
+  background-image: url(../Img/tienda/bannerRosa.jpg);
+  padding: 6% 0;
+  margin: 1% 1.5%;  
+  text-align: center;
+  border-radius: 10px;
+  &__titulo{
+      font-size: $letra*4;
+      color: rgb(255, 220, 245);
+      font-weight: 700;
+  }
+}
+
+.bannerTienda2 {
+  background-image: url(../Img/tienda/bannerProt.jpg);
+  padding: 6% 0;
+  margin: 1% 1.5%;  
+  text-align: center;
+  border-radius: 10px;
+  &__titulo{
+      font-size: $letra*4;
+      color: rgb(0, 0, 0);
+      font-weight: 700;
+  }
+}
+
+.bannerTienda3 {
+  background-image: url(../Img/tienda/bannerRopa.jfif);
+  padding: 6% 0;
+  margin: 1% 1.5%;  
+  text-align: center;
+  border-radius: 10px;
+  &__titulo{
+      font-size: $letra*4;
+      color: rgb(252, 96, 57);
+      font-weight: 700;
+  }
 }
 
 .containerTienda{
     margin-top: 40px;
     &__serviciosPadre{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
     }
-    &__serviciosHijo{
-        display: flex;
-        flex-direction: column;
-        grid-gap: 1rem;
-        justify-content: space-between;
-        align-items: center;
+    &__productos{
             img{
-                max-width: 290px;
-                max-height: 290px;
+                max-width: 200px;
+                max-height: 200px;
+                margin: 15px;
             }
-    }
-    &__serviciosHijo:hover{
-        cursor: pointer;
     }
 }
 

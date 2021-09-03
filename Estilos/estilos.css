@@ -170,14 +170,40 @@
     padding-left: 30px;
     margin-right: 2%;
   }
+  .containerTips__serviciosPadre {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+  .containerTips__serviciosHijo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .containerTips__serviciosHijo img {
+    max-width: 290px;
+    max-height: 290px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .containerTips__serviciosPadre {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
   }
   .containerTips__serviciosHijo {
     display: -webkit-box;
@@ -378,12 +404,6 @@ hr {
   text-decoration: underline;
 }
 
-.h2Rutinas {
-  color: #6cdabe;
-  font-size: 57px;
-  text-align: center;
-}
-
 .hr-rutinas {
   background: #348F50;
   /* fallback for old browsers */
@@ -578,6 +598,16 @@ p {
   text-decoration: underline;
 }
 
+.btn-primary {
+  margin-top: 10px;
+  background-color: black !important;
+  border: black !important;
+}
+
+.artIntro {
+  margin-top: 10px;
+}
+
 .containerTips__serviciosPadre {
   display: -ms-grid;
   display: grid;
@@ -630,68 +660,56 @@ p {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.bannerTienda {
-  background-image: url("../Img/varios/rosa.png");
-  height: 70vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  margin-top: 10px;
+.bannerTienda1 {
+  background-image: url(../Img/tienda/bannerRosa.jpg);
+  padding: 6% 0;
+  margin: 1% 1.5%;
+  text-align: center;
+  border-radius: 10px;
 }
 
-.bannerTienda h2 {
-  color: #fbff00;
-  margin-left: 30px;
-  margin-top: 30px;
-  font-size: 50px;
-}
-
-.bannerTienda p {
+.bannerTienda1__titulo {
+  font-size: 40px;
+  color: #ffdcf5;
   font-weight: 700;
-  background-color: white;
-  color: #fbff00;
-  width: 60%;
-  margin-left: 30px;
+}
+
+.bannerTienda2 {
+  background-image: url(../Img/tienda/bannerProt.jpg);
+  padding: 6% 0;
+  margin: 1% 1.5%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.bannerTienda2__titulo {
+  font-size: 40px;
+  color: black;
+  font-weight: 700;
+}
+
+.bannerTienda3 {
+  background-image: url(../Img/tienda/bannerRopa.jfif);
+  padding: 6% 0;
+  margin: 1% 1.5%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.bannerTienda3__titulo {
+  font-size: 40px;
+  color: #fc6039;
+  font-weight: 700;
 }
 
 .containerTienda {
   margin-top: 40px;
 }
 
-.containerTienda__serviciosPadre {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-.containerTienda__serviciosHijo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.containerTienda__serviciosHijo img {
-  max-width: 290px;
-  max-height: 290px;
-}
-
-.containerTienda__serviciosHijo:hover {
-  cursor: pointer;
+.containerTienda__productos img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 15px;
 }
 
 .productosTienda {
