@@ -508,6 +508,12 @@ p {
 }
 
 /*RECETAS*/
+.hr-recetas {
+  background: #ace821;
+  background: -webkit-gradient(linear, left top, right top, from(#2d706d), color-stop(20%, #3a7774), color-stop(50%, #235552), color-stop(80%, #439692), to(#165855));
+  background: linear-gradient(90deg, #2d706d 0%, #3a7774 20%, #235552 50%, #439692 80%, #165855 100%);
+}
+
 .nav-link-recetas {
   font-size: 20px;
 }
@@ -531,13 +537,13 @@ p {
   color: #2d706d;
 }
 
-.text-center-h2-recetas {
-  padding-bottom: 40px;
-}
-
 .containerRecetas__serviciosHijo-recetas img {
   max-width: 200px;
   max-height: 200px;
+}
+
+.text-center-h2-recetas {
+  padding-bottom: 40px;
 }
 
 .Recetas {
@@ -545,36 +551,22 @@ p {
   padding: 1px;
 }
 
-.Recetas__articuloIzq {
-  height: 300px;
-  font-size: 20px;
-  font-family: 'Oswald', sans-serif;
-  color: #118d8d;
-  margin-bottom: 110px;
-}
-
-.Recetas__articuloDer {
-  height: 300px;
-  font-size: 20px;
-  font-family: 'Oswald', sans-serif;
-  color: #118d8d;
-  margin-bottom: 110px;
-}
-
 .Recetas p {
   text-align: justify;
   font-size: 25px;
+  padding: 30px;
 }
 
 .Recetas img {
   border-radius: 5px;
-  width: 450px;
+  width: 400px;
   height: 300px;
 }
 
 .Recetas h3:hover {
   -webkit-text-decoration: underline #118d8d 2px;
           text-decoration: underline #118d8d 2px;
+  color: #118d8d;
   cursor: pointer;
 }
 
@@ -756,18 +748,6 @@ p {
   border: black solid 2px;
 }
 
-.footer__conoce {
-  color: black;
-  font-size: 25px;
-  font-weight: 50;
-  float: right;
-}
-
-.footer h4 {
-  text-align: center;
-  font-weight: 50;
-}
-
 .comparteRedes {
   font-size: 150%;
   margin: 0 0 15px;
@@ -779,25 +759,25 @@ a {
 }
 
 .containerFooter {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 20vh;
-  float: left;
+  height: 15vh;
 }
 
-.btn {
+.containerFooter .btn {
   background-color: #88bd0d;
   padding: 1em 1.5em;
   border-radius: 1rem;
 }
 
-.modal-window {
+.containerFooter .modal-window {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.25);
   top: 0;
@@ -812,13 +792,13 @@ a {
   transition: all 0.3s;
 }
 
-.modal-window:target {
+.containerFooter .modal-window:target {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
 }
 
-.modal-window > div {
+.containerFooter .modal-window > div {
   width: 400px;
   position: absolute;
   top: 50%;
@@ -831,7 +811,7 @@ a {
   box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
-.modal-close {
+.containerFooter .modal-close {
   color: #aaa;
   line-height: 50px;
   font-size: 80%;
@@ -843,11 +823,10 @@ a {
   text-decoration: none;
 }
 
-.modal-window div:not(:last-of-type) {
+.containerFooter .modal-window div:not(:last-of-type) {
   margin-bottom: 15px;
 }
 
-small {
+.containerFooter small {
   color: lightgray;
 }
-/*# sourceMappingURL=estilos.css.map */
