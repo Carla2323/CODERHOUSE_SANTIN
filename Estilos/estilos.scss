@@ -1,11 +1,11 @@
 @import "./partials/variables";
 @import "./partials/fuentes";
 @import "./partials/queries";
-@each $nombre-foto in friends, bannerRecetas, rosa{
-    .#{$nombre-foto}-each{
-        background-image: url("../Img/VARIOS/#{$nombre-foto}.png");
+@each $nombre-foto in bannerRosa, bannerProt, bannerRopa{
+    .#{$nombre-foto}-icon{
+        background-image: url("../Img/VARIOS/#{$nombre-foto}");
     }
-} //lo intente y no me salio.
+} 
 
 
 /*INDEX*/
@@ -399,7 +399,7 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
     background: linear-gradient(to right, #b91d73, $color-tienda); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
-.bannerTienda1 {
+.bannerRosa-icon {
   background-image: url(../Img/tienda/bannerRosa.jpg);
   padding: 6% 0;
   margin: 1% 1.5%;  
@@ -407,12 +407,13 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
   border-radius: 10px;
   &__titulo{
       font-size: $letra*4;
+      background-color: white;
       color: rgb(255, 220, 245);
       font-weight: 700;
   }
 }
 
-.bannerTienda2 {
+.bannerProt-icon {
   background-image: url(../Img/tienda/bannerProt.jpg);
   padding: 6% 0;
   margin: 1% 1.5%;  
@@ -420,20 +421,22 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
   border-radius: 10px;
   &__titulo{
       font-size: $letra*4;
-      color: rgb(0, 0, 0);
+      background-color: black;
+      color: white;
       font-weight: 700;
   }
 }
 
-.bannerTienda3 {
-  background-image: url(../Img/tienda/bannerRopa.jfif);
+.bannerRopa-icon {
+  background-image: url(../Img/tienda/bannerRopa.jpg);
   padding: 6% 0;
   margin: 1% 1.5%;  
   text-align: center;
   border-radius: 10px;
   &__titulo{
       font-size: $letra*4;
-      color: rgb(252, 96, 57);
+      background-color: rgb(252, 96, 57);
+      color: grey;
       font-weight: 700;
   }
 }
@@ -488,71 +491,24 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
     }
 }
 
-.comparteRedes {
-    font-size: 150%;
-    margin: 0 0 15px;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-.containerFooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
-
-    .btn {
-    background-color: $color-principal;
-    padding: 1em 1.5em;
-    border-radius: 1rem;
-    }
-    .modal-window {
-        position: fixed;
-        background-color: rgba(255, 255, 255, 0.25);
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-        transition: all 0.3s;
-    }
-    .modal-window:target {
-        visibility: visible;
-        opacity: 1;
-        pointer-events: auto;
-    }
-    .modal-window  > div {
-        width: 400px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 2em;
-        background: #fff;
-        -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
-            box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
-    }
-    .modal-close {
-        color: #aaa;
-        line-height: 50px;
-        font-size: 80%;
-        position: absolute;
-        right: 0;
+.redes{
+    height: 200px;
+    padding: 30px;
+    h2{
+        font-family: gabriola;
         text-align: center;
-        top: 0;
-        width: 70px;
-        text-decoration: none;
+        font-weight: bold;
     }
-    .modal-window div:not(:last-of-type) {
-        margin-bottom: 15px;
+}
+
+.sociales{
+    text-align: center;
+    padding: 20px 0;
+    list-style: none;
+    li{
+        display: inline-block;
     }
-    small {
-        color: lightgray;
+    a{
+        padding: 10px;
     }
 }
