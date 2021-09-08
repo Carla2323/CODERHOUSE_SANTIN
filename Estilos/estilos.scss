@@ -3,7 +3,7 @@
 @import "./partials/queries";
 @each $nombre-foto in bannerRosa, bannerProt, bannerRopa{
     .#{$nombre-foto}-icon{
-        background-image: url("../Img/VARIOS/#{$nombre-foto}");
+        background-image: url("../Img/tienda/#{$nombre-foto}");
     }
 } 
 
@@ -315,6 +315,7 @@ p {
 .Recetas {
     width: 88%;
     padding: 1px;
+    margin-left: 30px;
     p{
         text-align: justify;
         font-size: $letra*2.5;
@@ -355,6 +356,12 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
   margin-top: 10px;
   background-color: black !important;
   border: black !important;
+}
+
+#botonTips{
+  display: flex;
+  justify-content: center;
+  height: 75px;
 }
 
 .artIntro{

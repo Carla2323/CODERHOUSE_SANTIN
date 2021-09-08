@@ -58,15 +58,15 @@
 }
 
 .bannerRosa-icon {
-  background-image: url("../Img/VARIOS/bannerRosa");
+  background-image: url("../Img/tienda/bannerRosa");
 }
 
 .bannerProt-icon {
-  background-image: url("../Img/VARIOS/bannerProt");
+  background-image: url("../Img/tienda/bannerProt");
 }
 
 .bannerRopa-icon {
-  background-image: url("../Img/VARIOS/bannerRopa");
+  background-image: url("../Img/tienda/bannerRopa");
 }
 
 /*INDEX*/
@@ -379,6 +379,7 @@ p {
 .Recetas {
   width: 88%;
   padding: 1px;
+  margin-left: 30px;
 }
 
 .Recetas p {
@@ -424,6 +425,16 @@ p {
   margin-top: 10px;
   background-color: black !important;
   border: black !important;
+}
+
+#botonTips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 75px;
 }
 
 .artIntro {
@@ -605,3 +616,4 @@ p {
 .sociales a {
   padding: 10px;
 }
+/*# sourceMappingURL=estilos.css.map */
