@@ -355,7 +355,7 @@ p {
 }
 
 .bannerRecetas {
-  background-image: url(../Img/RECETAS/bannerRecetas.jpg);
+  background-image: url(../img/recetas/bannerRecetas.jpg);
   padding: 2% 0;
   margin: 1% 1.5%;
   text-align: center;
@@ -494,7 +494,7 @@ p {
 }
 
 .bannerRosa-icon {
-  background-image: url(../Img/tienda/bannerRosa.jpg);
+  background-image: url(../img/tienda/bannerRosa.jpg);
   padding: 6% 0;
   margin: 1% 1.5%;
   text-align: center;
@@ -509,7 +509,7 @@ p {
 }
 
 .bannerProt-icon {
-  background-image: url(../Img/tienda/bannerProt.jpg);
+  background-image: url(../img/tienda/bannerProt.jpg);
   padding: 6% 0;
   margin: 1% 1.5%;
   text-align: center;
@@ -524,7 +524,7 @@ p {
 }
 
 .bannerRopa-icon {
-  background-image: url(../Img/tienda/bannerRopa.jpg);
+  background-image: url(../img/tienda/bannerRopa.jpg);
   padding: 6% 0;
   margin: 1% 1.5%;
   text-align: center;
@@ -616,4 +616,3 @@ p {
 .sociales a {
   padding: 10px;
 }
-/*# sourceMappingURL=estilos.css.map */
