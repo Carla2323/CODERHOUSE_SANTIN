@@ -1,186 +1,215 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./estilos/estilos.css">
-    <!--AOS-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>CSFit</title>
-  </head>
-  <body>
-    <header>        
-        <h1>Bienvenido a CSFit, tu lugar saludable!</h1>  
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="footer__logo" src="./img/varios/posibleLogo.jpg" alt=""></a> <!--a la img ponele class="image-fluid"-->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="rutinas.html">Rutinas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="recetas.html">Recetas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="tips.html">Tips</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="tienda.html">Tienda</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <hr class="m-0 hr-index">
-    </header>
-    <section>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/rutinas/banner2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>TENEMOS EL ENTRENAMIENTO QUE MÁS SE ADAPTA A VOS.</h5>
-            </div>
-          </div>
-          <div class="carousel-item carouselFoto">
-            <img src="./img/varios/carouselfoto2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>¿QUÉ ESPERAS PARA UNIRTE?</h5>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-    <section class="servicios mt-5">
-      <div class="container">
-        <h2 class="text-center text-center-h2">Acerca de nosotros</h2>
-        <div class="row text-center">
-          <div class="col-md-4 container__servicios">
-            <h3>Profesionales</h3>
-            <img class="img-fluid" src="img/staff/equipo.png" alt="">
-            <p>Contamos con un personal que se capacita constantemente para brindarte la mejor experiencia. Cubrimos todos los campos necesarios para que puedas apoyarte en nosotros en este camino de vida saludable.</p>
-          </div>
-          <div class="col-md-4 container__servicios">
-            <h3>Asesoramiento</h3>
-            <img class="img-fluid" src="img/staff/seguimiento.png" alt="">
-            <p>Te brindamos un seguimiento constante para poder adaptar nuestros servicios a la perfección para ti, puedes chequear tus avances cuantas veces quieras... Tu cambio de vida está solo a un click de distancia!</p>
-          </div>
-          <div class="col-md-4 container__servicios">
-            <h3>Tienda Online</h3>
-            <img class="img-fluid" src="img/staff/tienda.png" alt="">
-            <p>En nuestra tienda podrás encontrar nuestra linea de ropa para que lo des todo en los entrenamientos, viandas para que comiences a comer sano sin tener que cocinar y muchas cosas más! ¿ Qué esperas para ir a ver?</p>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#85c434" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,101.3C384,117,480,171,576,208C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-      </svg>
-    </section>
-    <section class="equipo pb-5">
-      <div class="container">
-        <h2>CONOCE A NUESTRO EQUIPO</h2>
-        <div class="row text-center">
-          <div class="col-md-3 container__servicios container__staff">
-            <img class="img-fluid" src="./img/staff/profesional1.png" alt="">
-            <h6>MARTIN PIMENTA</h6>
-          </div>
-          <div class="col-md-3 container__servicios container__staff">
-            <img class="img-fluid" src="./img/staff/profesional2.png" alt="">
-            <h6>CARLA SANTIN</h6>
-          </div>
-          <div class="col-md-3 container__servicios container__staff">
-            <img class="img-fluid" src="./img/staff/profesional3.png" alt="">
-            <h6>ALFREDO SANTIN</h6>
-          </div>
-          <div class="col-md-3 container__servicios container__staff">
-            <img class="img-fluid" src="./img//staff/profesional4.png" alt="">
-            <h6>GLADYS GIANNELLI</h6>
-          </div>
-        </div>
-      </div>
-    </section>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="En este sitio web encontrarás recetas, rutinas y mucho más">
+  <meta name="keywords"
+    content="HTML, CSS, SCSS, BOOTSTRAP, FITNESS, ROPA, BROMATOLOGÍA, MOTIVACIÒN, SUPERACIÒN, RECETAS">
 
-    <section class="hero each">
-      <div class="containerHero">
-        <div class="row">
-          <div class="col-md-6" data-aos="fade-up-right">
-            <h2>CAMBIA TU ESTILO DE VIDA</h2>
-            <p>Únete a nuestra comunidad</p>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./estilos/estilos.css">
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>CSFit</title>
+</head>
+
+<body>
+  <header>
+    <h1>Bienvenido a CSFit, tu lugar saludable!</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="footer__logo" src="./img/varios/posibleLogo.jpg" alt=""></a>
+        <!--a la img ponele class="image-fluid"-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rutinas.html">Rutinas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recetas.html">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tips.html">Tips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tienda.html">Tienda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr class="m-0 hr-index">
+  </header>
+  <section>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/rutinas/banner2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>TENEMOS EL ENTRENAMIENTO QUE MÁS SE ADAPTA A VOS.</h5>
+          </div>
+        </div>
+        <div class="carousel-item carouselFoto">
+          <img src="./img/varios/carouselfoto2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>¿QUÉ ESPERAS PARA UNIRTE?</h5>
           </div>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="containerBeneficios mx-auto px-4" data-aos="zoom-in-up">
-          <h2>BENEFICIOS</h2>
-          <div>
-            <p class="p1">Obtén acceso ilimitado a un amplio catálogo de rutinas y programas de diferentes disciplinas para que entrenes cómo, dónde y cuando quieras... gratis y para siempre.</p>
-          </div>
-        <div class="border border-gray-200 mb-12"></div>
-            <div class="mb-12">
-              <p class="titulo">ACCESO ILIMITADO</p>
-              <p>Disfruta más de 1,000 workouts y programas de fitness, yoga y meditación ilimitados.</p>
-            <div class="mb-12">
-              <p class="titulo">CONTENIDO ORIGINAL</p>
-              <p>Acceso exclusivo CSFit Originals con los mejores coaches en español además de programas de los coaches más reconocidos de América Latina.</p>
-            </div>
-            <div class="mb-12">
-              <p class="titulo">LLEVA TU ENTRENAMIENTO CONTIGO</p>
-              <p>Ve tus clases donde sea con acceso móvil vía iOS y Android, o web y próximamente desde tu TV.</p>
-            </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="servicios mt-5">
+    <div class="container">
+      <h2 class="text-center text-center-h2">Acerca de nosotros</h2>
+      <div class="row text-center">
+        <div class="col-md-4 container__servicios">
+          <h3>Profesionales</h3>
+          <img class="img-fluid" src="img/staff/equipo.png" alt="">
+          <p>Contamos con un personal que se capacita constantemente para brindarte la mejor experiencia. Cubrimos todos
+            los campos necesarios para que puedas apoyarte en nosotros en este camino de vida saludable.</p>
+        </div>
+        <div class="col-md-4 container__servicios">
+          <h3>Asesoramiento</h3>
+          <img class="img-fluid" src="img/staff/seguimiento.png" alt="">
+          <p>Te brindamos un seguimiento constante para poder adaptar nuestros servicios a la perfección para ti, puedes
+            chequear tus avances cuantas veces quieras... Tu cambio de vida está solo a un click de distancia!</p>
+        </div>
+        <div class="col-md-4 container__servicios">
+          <h3>Tienda Online</h3>
+          <img class="img-fluid" src="img/staff/tienda.png" alt="">
+          <p>En nuestra tienda podrás encontrar nuestra linea de ropa para que lo des todo en los entrenamientos,
+            viandas para que comiences a comer sano sin tener que cocinar y muchas cosas más! ¿ Qué esperas para ir a
+            ver?</p>
         </div>
       </div>
-      <div class="suplementos">
-          <div class="w-full md:w-1/2">
-              <h2>SUPLEMENTOS</h2>
-              <p>Complementa tu entrenamiento y acelera tus resultados con InstaFit Vegan Protein, la proteína vegetal más deliciosa del mundo.</p>
-              <p>23g de proteína, 100% vegetal y adicionada con BCAA's, vitamina B12 y extracto de café verde para efecto termogénico.</p>
-                <a href="./tienda.html">COMPRA TU PROTEÍNA AQUÍ</a>
-          </div>
-        </section>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#85c434" fill-opacity="1"
+        d="M0,128L48,117.3C96,107,192,85,288,101.3C384,117,480,171,576,208C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <section class="equipo pb-5">
+    <div class="container">
+      <h2>CONOCE A NUESTRO EQUIPO</h2>
+      <div class="row text-center">
+        <div class="col-md-3 container__servicios container__staff">
+          <img class="img-fluid" src="./img/staff/profesional1.png" alt="">
+          <h6>MARTIN PIMENTA</h6>
         </div>
-    </section>
-    <hr class="m-0">
-    <!--Inicio del footer-->
-    <footer class="footer">
-      <div class="redes">
-        <h2>SIGUENOS</h2>
-        <ul class="sociales">
-          <li><a href="https://www.instagram.com/?hl=es" target="blank"> <img src="./img/varios/logoInsta.png" width="45" height="45" alt="Logo de Instagram"></a></li>
-          <li><a href="https://twitter.com/" target="blank"> <img src="./img/varios/logoTw.png" width="45" height="45" alt="Logo de Twitter"></a></li>
-          <li><a href="https://www.facebook.com/" target="blank"><img src="./img/varios/logoFb.webp" width="45" height="45" alt="Logo de FaceBook"></a></li>
-          <li><a href="https://www.youtube.com/" target="blank"><img src="./img/varios/logoYt.jpg" width="45" height="45" alt="Logo de Youtube"></a></li>
-        </ul>
+        <div class="col-md-3 container__servicios container__staff">
+          <img class="img-fluid" src="./img/staff/profesional2.png" alt="">
+          <h6>CARLA SANTIN</h6>
+        </div>
+        <div class="col-md-3 container__servicios container__staff">
+          <img class="img-fluid" src="./img/staff/profesional3.png" alt="">
+          <h6>ALFREDO SANTIN</h6>
+        </div>
+        <div class="col-md-3 container__servicios container__staff">
+          <img class="img-fluid" src="./img//staff/profesional4.png" alt="">
+          <h6>GLADYS GIANNELLI</h6>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <section class="hero each">
+    <div class="containerHero">
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-up-right">
+          <h2>CAMBIA TU ESTILO DE VIDA</h2>
+          <p>Únete a nuestra comunidad</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="containerBeneficios mx-auto px-4" data-aos="zoom-in-up">
+      <h2>BENEFICIOS</h2>
+      <div>
+        <p class="p1">Obtén acceso ilimitado a un amplio catálogo de rutinas y programas de diferentes disciplinas para
+          que entrenes cómo, dónde y cuando quieras... gratis y para siempre.</p>
+      </div>
+      <div class="border border-gray-200 mb-12"></div>
+      <div class="mb-12">
+        <p class="titulo">ACCESO ILIMITADO</p>
+        <p>Disfruta más de 1,000 workouts y programas de fitness, yoga y meditación ilimitados.</p>
+        <div class="mb-12">
+          <p class="titulo">CONTENIDO ORIGINAL</p>
+          <p>Acceso exclusivo CSFit Originals con los mejores coaches en español además de programas de los coaches más
+            reconocidos de América Latina.</p>
+        </div>
+        <div class="mb-12">
+          <p class="titulo">LLEVA TU ENTRENAMIENTO CONTIGO</p>
+          <p>Ve tus clases donde sea con acceso móvil vía iOS y Android, o web y próximamente desde tu TV.</p>
+        </div>
+      </div>
+    </div>
+    <div class="suplementos">
+      <div class="w-full md:w-1/2">
+        <h2>SUPLEMENTOS</h2>
+        <p>Complementa tu entrenamiento y acelera tus resultados con InstaFit Vegan Protein, la proteína vegetal más
+          deliciosa del mundo.</p>
+        <p>23g de proteína, 100% vegetal y adicionada con BCAA's, vitamina B12 y extracto de café verde para efecto
+          termogénico.</p>
+        <a href="./tienda.html">COMPRA TU PROTEÍNA AQUÍ</a>
+      </div>
+  </section>
+  </div>
+  </section>
+  <hr class="m-0">
+  <!--Inicio del footer-->
+  <footer class="footer">
+    <div class="redes">
+      <h2>SIGUENOS</h2>
+      <ul class="sociales">
+        <li><a href="https://www.instagram.com/?hl=es" target="blank"> <img src="./img/varios/logoInsta.png" width="45"
+              height="45" alt="Logo de Instagram"></a></li>
+        <li><a href="https://twitter.com/" target="blank"> <img src="./img/varios/logoTw.png" width="45" height="45"
+              alt="Logo de Twitter"></a></li>
+        <li><a href="https://www.facebook.com/" target="blank"><img src="./img/varios/logoFb.webp" width="45"
+              height="45" alt="Logo de FaceBook"></a></li>
+        <li><a href="https://www.youtube.com/" target="blank"><img src="./img/varios/logoYt.jpg" width="45" height="45"
+              alt="Logo de Youtube"></a></li>
+      </ul>
+    </div>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <!--LIBREERIA AOS-->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script> 
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!--LIBREERIA AOS-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
